@@ -13,7 +13,7 @@
             <div class="col-sm mb-2 mb-sm-0">
                 <h2 class="page-header-title text-capitalize">
                     <div class="card-header-icon d-inline-flex mr-2 img">
-                        <img src="{{asset('/assets/admin/img/resturant-panel/page-title/employee-role.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/employee-role.png')}}" alt="public">
                     </div>
                     <span>
                         {{ translate('Employee Role') }}
@@ -220,7 +220,7 @@
                         </table>
                         @if(count($rl) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

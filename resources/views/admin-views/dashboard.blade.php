@@ -86,7 +86,7 @@
                     <!-- Header -->
                     <div class="card-header align-items-center">
                         <h5 class="card-title">
-                            <img src="{{asset('assets/admin/img/dashboard/statistics.png')}}" alt="dashboard" class="card-header-icon">
+                            <img src="{{asset('/public/assets/admin/img/dashboard/statistics.png')}}" alt="dashboard" class="card-header-icon">
                             <span>{{translate('user_statistics')}}</span>
                         </h5>
                         <div id="stat_zone">
@@ -203,10 +203,10 @@
 @endsection
 
 @push('script')
-    <!-- <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="{{asset('assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script> -->
+    <!-- <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script> -->
     <script
-        src="{{asset('assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+        src="{{asset('public/assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
 @endpush
 
 

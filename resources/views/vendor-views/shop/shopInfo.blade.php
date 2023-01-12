@@ -12,7 +12,7 @@
             <h2 class="page-header-title text-capitalize my-2">
                 <div>
                     <div class="card-header-icon d-inline-flex mr-2 img">
-                        <img src="{{asset('/assets/admin/img/resturant-panel/page-title/resturant.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/resturant.png')}}" alt="public">
                     </div>
                     <span>
                         {{__('messages.my_shop')}} {{__('messages.info')}}
@@ -29,15 +29,15 @@
         <div class="card-body p-0">
             @if($shop->cover_photo)
                 <div>
-                    <img src="{{asset('storage/app/public/restaurant/cover/'.$shop->cover_photo)}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" style="width: 100%;border-radius:15px 15px 0 0;height:320px;object-fit:cover">
+                    <img src="{{asset('storage/app/public/restaurant/cover/'.$shop->cover_photo)}}" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" style="width: 100%;border-radius:15px 15px 0 0;height:320px;object-fit:cover">
                 </div>
             @endif
             <div class="my-resturant--card">
                 @if($shop->image=='def.png')
                 <div class="my-resturant--avatar">
-                    <img src="{{asset('assets/back-end')}}/img/shop.png"
+                    <img src="{{asset('public/assets/back-end')}}/img/shop.png"
                     class="border"
-                    onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                     alt="User Pic">
                 </div>
                 
@@ -45,7 +45,7 @@
                 
                     <div class="my-resturant--avatar">
                         <img src="{{asset('storage/app/public/restaurant/'.$shop->logo)}}" class="border"
-                        onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" alt="">
+                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" alt="">
                     </div>
 
                 

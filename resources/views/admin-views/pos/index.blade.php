@@ -105,7 +105,7 @@
                             <!-- Static -->
                             <div class="my-auto">
                                 <div class="search--no-found">
-                                    <img src="{{asset('/assets/admin/img/search-icon.png')}}" alt="img">
+                                    <img src="{{asset('/public/assets/admin/img/search-icon.png')}}" alt="img">
                                     <p>
                                         {{translate('messages.food_search_text_pos')}}
                                     </p>

@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{asset('assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -87,7 +87,7 @@
                     <div class="card-body d-flex flex-column">
 
                         <center id="image-viewer-section" class="my-auto">
-                            <img style="height: 140px;border-radius:8px;object-fit:cover" id="viewer" src="{{asset('/assets/admin/img/100x100/food-default-image.png')}}" alt="banner image"/>
+                            <img style="height: 140px;border-radius:8px;object-fit:cover" id="viewer" src="{{asset('/public/assets/admin/img/100x100/food-default-image.png')}}" alt="banner image"/>
                         </center>
 
                         <div class="custom-file mt-3">
@@ -312,7 +312,7 @@
     </script>
 
 
-    <script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
 
     <script>
         $('#choice_attributes').on('change', function () {
@@ -427,7 +427,7 @@
                         $('#choice_attributes').val(null).trigger('change');
                         $('#customer_choice_options').val(null).trigger('change');
                         $('#variant_combination').empty().trigger('change');
-                        $('#viewer').attr('src','{{asset('/assets/admin/img/100x100/food-default-image.png')}}');
+                        $('#viewer').attr('src','{{asset('/public/assets/admin/img/100x100/food-default-image.png')}}');
                     })
                 </script>
 @endpush

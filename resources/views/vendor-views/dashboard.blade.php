@@ -11,7 +11,7 @@
             <div class="d-flex flex-wrap justify-content-between align-items-center">
                 <h1 class="page-header-title my-1">
                     <div class="card-header-icon d-inline-flex mr-2 img">
-                        <img src="{{asset('/assets/admin/img/resturant-panel/page-title/dashboard.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/dashboard.png')}}" alt="public">
                     </div>
                     <span>
                         {{__('messages.dashboard')}}
@@ -193,10 +193,10 @@
 @endsection
 
 @push('script')
-    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="{{asset('assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/vendor/chart.js.extensions/chartjs-extensions.js"></script>
     <script
-        src="{{asset('assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+        src="{{asset('public/assets/admin')}}/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
 @endpush
 
 

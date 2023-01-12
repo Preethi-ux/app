@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h1 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/payment.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment.png')}}" alt="public">
                         </div>
                         <span>
                             Payment {{__('messages.methods')}}
@@ -119,7 +119,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/sslcommerz.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/sslcommerz.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" name="store_id" placeholder="Store ID" value="{{env('APP_MODE')!='demo'?($config?$config['store_id']:''):''}}">
@@ -156,7 +156,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/paypal.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/paypal.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Paypal Client Id" name="paypal_client_id"
@@ -195,7 +195,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/razorpay.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/razorpay.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Razor Key" name="razor_key"
@@ -233,7 +233,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/stripe.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/stripe.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Publish Key" name="published_key"
@@ -273,7 +273,7 @@
                         </h5>
                         <span class="badge badge-soft-danger">{{__('messages.paystack_callback_warning')}}</span>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/paystack.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/paystack.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="publicKey"
@@ -329,7 +329,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/senang-pay.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/senang-pay.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Secret Key" name="secret_key"
@@ -376,7 +376,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/flutterwave.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/flutterwave.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="public_key"
@@ -427,7 +427,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/mercador-pago.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/mercador-pago.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="public_key"
@@ -475,7 +475,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/paymob.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/paymob.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <label class="{{Session::get('direction') === 'rtl' ? 'pr-3' : 'pl-3'}}">{{__('messages.callback')}}</label>
@@ -538,7 +538,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/bkash.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/bkash.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Api Key" name="api_key"
@@ -594,7 +594,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/paytabs.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/paytabs.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Profile Id" name="profile_id"
@@ -646,7 +646,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/paytm.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/paytm.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Paytm Merchant Key" name="paytm_merchant_key"
@@ -697,7 +697,7 @@
                             </label>
                         </h5>
                         <div class="payment--gateway-img">
-                            <img src="{{asset('/assets/admin/img/payment/liqpay.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/payment/liqpay.png')}}" alt="public">
                         </div>
                             <div class="form-group mb-4">
                                 <input class="form-control" type="text" placeholder="Public Key" name="public_key"

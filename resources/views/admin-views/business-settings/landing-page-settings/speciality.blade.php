@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -14,7 +14,7 @@
         <!-- Page Header -->
         <h1 class="page-header-title text-capitalize">
             <div class="card-header-icon d-inline-flex mr-2 img">
-                <img src="{{asset('/assets/admin/img/landing-page.png')}}" class="mw-26px" alt="public">
+                <img src="{{asset('/public/assets/admin/img/landing-page.png')}}" class="mw-26px" alt="public">
             </div>
             <span>
                 {{ __('messages.landing_page_settings') }}
@@ -89,7 +89,7 @@
 
                     <center style="display: none" id="image-viewer-section" class="pt-2">
                         <img style="height: 200px;border: 1px solid; border-radius: 10px;" id="viewer"
-                                src="{{asset('assets/admin/img/400x400/img2.jpg')}}" alt=""/>
+                                src="{{asset('public/assets/admin/img/400x400/img2.jpg')}}" alt=""/>
                     </center>
                 </div>
 
@@ -117,8 +117,8 @@
                                 <th scope="row">{{$key + 1}}</th>
                                 <td>
                                     <div class="media align-items-center">
-                                        <img class="avatar avatar-lg mr-3" src="{{asset('assets/landing/image')}}/{{$sp['img']}}"
-                                                onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" alt="{{$sp['title']}}">
+                                        <img class="avatar avatar-lg mr-3" src="{{asset('public/assets/landing/image')}}/{{$sp['img']}}"
+                                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" alt="{{$sp['title']}}">
                                     </div>
                                 </td>
                                 <td>{{$sp['title']}}</td>
@@ -142,7 +142,7 @@
                 </table>
                 @if(count($speciality) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

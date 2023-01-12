@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/wallet.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/wallet.png')}}" alt="public">
                         </div>
                         <span>
                             {{__('messages.restaurant')}} {{__('messages.wallet')}}
@@ -45,7 +45,7 @@
                         {{__('messages.withdraw_able_balance')}}
                     </div>
                     <div class="d-flex align-items-center justify-content-center mt-3">
-                        <img class="cash-icon mr-3" src="{{asset('/assets/admin/img/transactions/cash.png')}}" alt="transactions">
+                        <img class="cash-icon mr-3" src="{{asset('/public/assets/admin/img/transactions/cash.png')}}" alt="transactions">
                         <h2
                             class="cash--title">{{\App\CentralLogics\Helpers::format_currency($wallet->balance)}}
                         </h2>
@@ -68,7 +68,7 @@
                     <div class="resturant-card  bg--2" >
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->pending_withdraw)}}</h4>
                         <span class="subtitle">{{__('messages.pending')}} {{__('messages.withdraw')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="public">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="public">
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
                     <div class="resturant-card  bg--3">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->total_withdrawn)}}</h4>
                         <span class="subtitle">{{__('messages.withdrawn')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-amount.png')}}" alt="public">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-amount.png')}}" alt="public">
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                     <div class="resturant-card  bg--5">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->collected_cash)}}</h4>
                         <span class="subtitle">{{__('messages.collected_cash')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-balance.png')}}" alt="public">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-balance.png')}}" alt="public">
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@
                     <div class="resturant-card  bg--1">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->total_earning)}}</h4>
                         <span class="subtitle">{{__('messages.total_earning')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/earning.png')}}" alt="public">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/earning.png')}}" alt="public">
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                         </table>
                         @if(count($withdraw_req) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

@@ -38,7 +38,7 @@
             @csrf
             <div class="card mb-2">
                 <div class="card-header">
-                    <h4 class="card-title m-0 d-flex align-items-center"><img class="mr-2 align-self-start" src={{asset('assets/admin/img/resturent.png')}} alt="instructions"> <span>{{ __('messages.restaurant') }} {{ __('messages.info') }}</span></h4>
+                    <h4 class="card-title m-0 d-flex align-items-center"><img class="mr-2 align-self-start" src={{asset('public/assets/admin/img/resturent.png')}} alt="instructions"> <span>{{ __('messages.restaurant') }} {{ __('messages.info') }}</span></h4>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -90,7 +90,7 @@
                         <div class="col-md-6 col-lg-4">
                             <center>
                                 <img style="max-height: 100px;border-radius: 10px;object-fit:contain;" id="viewer"
-                                    src="{{asset('assets/admin/img/100x100/restaurant-default-image.png') }}"
+                                    src="{{ asset('public/assets/admin/img/100x100/restaurant-default-image.png') }}"
                                     alt="delivery-man image" />
                             </center>
 
@@ -111,7 +111,7 @@
                         <div class="col-md-6 col-lg-4">
                             <center>
                                 <img style="max-width: 100%;border-radius: 10px; max-height:100px;object-fit:contain;"
-                                    id="coverImageViewer" src="{{asset('assets/admin/img/300x100/restaurant-default-image.png') }}"
+                                    id="coverImageViewer" src="{{ asset('public/assets/admin/img/300x100/restaurant-default-image.png') }}"
                                     alt="Product thumbnail" />
                             </center>
                             <div class="form-group pt-3">
@@ -342,7 +342,7 @@
         });
     </script>
 
-    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script type="text/javascript">
         $(function() {
             $("#coba").spartanMultiImagePicker({
@@ -352,7 +352,7 @@
                 groupClassName: 'col-lg-2 col-md-4 col-sm-4 col-6',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('assets/admin/img/400x400/img2.jpg') }}',
+                    image: '{{ asset('public/assets/admin/img/400x400/img2.jpg') }}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",
@@ -547,9 +547,9 @@
             $('#address').val(null);
             $('#minimum_delivery_time').val(null);
             $('#maximum_delivery_time').val(null);
-            $('#viewer').attr('src', "{{asset('assets/admin/img/100x100/restaurant-default-image.png') }}");
+            $('#viewer').attr('src', "{{ asset('public/assets/admin/img/100x100/restaurant-default-image.png') }}");
             $('#customFileEg1').val(null);
-            $('#coverImageViewer').attr('src', "{{asset('assets/admin/img/300x100/restaurant-default-image.png') }}");
+            $('#coverImageViewer').attr('src', "{{ asset('public/assets/admin/img/300x100/restaurant-default-image.png') }}");
             $('#coverImageUpload').val(null);
             $('#choice_zones').val(null).trigger('change');
             $('#f_name').val(null);

@@ -2,9 +2,9 @@
 @section('title',__('messages.Bank Info View'))
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{asset('public/assets/back-end')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/back-end/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/back-end/css/croppie.css')}}" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -17,7 +17,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/bank.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/bank.png')}}" alt="public">
                         </div>
                         <span>
                             {{ translate('Bank Information') }}
@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                     <div class="bank--card__body">
-                                        <img class="bank__icon" src="{{asset('/assets/admin/img/resturant-panel/bank-icon.png')}}" alt="public">
+                                        <img class="bank__icon" src="{{asset('/public/assets/admin/img/resturant-panel/bank-icon.png')}}" alt="public">
                                         <ul>
                                             <li>
                                                 <h5>
@@ -167,5 +167,5 @@
 
 @push('script')
     <!-- Page level plugins -->
-    <script src="{{asset('assets/back-end/js/croppie.js')}}"></script>
+    <script src="{{asset('public/assets/back-end/js/croppie.js')}}"></script>
 @endpush

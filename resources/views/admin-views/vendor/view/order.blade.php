@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
 
 @endpush
 
@@ -68,14 +68,14 @@
 
             <div class="order-info-item" onclick="location.href='{{route('admin.order.list',['all'])}}?vendor[]={{$restaurant->id}}'">
                 <div class="order-info-icon">
-                    <img src="{{asset('/assets/admin/img/resturant/navbar/all.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/resturant/navbar/all.png')}}" alt="public">
                 </div>
                     <h6 class="card-subtitle">{{__('messages.all')}} {{__('messages.orders')}} <span class="amount text--primary">{{\App\Models\Order::where('restaurant_id', $restaurant->id)->count()}}</span></h6>
             </div>
             <span class="order-info-seperator"></span>
             <div class="order-info-item" onclick="location.href='{{route('admin.order.list',['scheduled'])}}?vendor[]={{$restaurant->id}}'">
                 <div class="order-info-icon">
-                    <img src="{{asset('/assets/admin/img/resturant/navbar/schedule.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/resturant/navbar/schedule.png')}}" alt="public">
                 </div>
                 <h6 class="card-subtitle">{{__('messages.scheduled')}} {{__('messages.orders')}}
                 <span class="amount text--warning">{{\App\Models\Order::Scheduled()->where('restaurant_id', $restaurant->id)->count()}}</span></h6>
@@ -83,7 +83,7 @@
             <span class="order-info-seperator"></span>
             <div class="order-info-item" onclick="location.href='{{route('admin.order.list',['pending'])}}?vendor[]={{$restaurant->id}}'">
                 <div class="order-info-icon">
-                    <img src="{{asset('/assets/admin/img/resturant/navbar/pending.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/resturant/navbar/pending.png')}}" alt="public">
                 </div>
                 <h6 class="card-subtitle">{{__('messages.pending')}} {{__('messages.orders')}}
                 <span class="amount text--info">
@@ -92,7 +92,7 @@
             <span class="order-info-seperator"></span>
             <div class="order-info-item" onclick="location.href='{{route('admin.order.list',['delivered'])}}?vendor[]={{$restaurant->id}}'">
                 <div class="order-info-icon">
-                    <img src="{{asset('/assets/admin/img/resturant/navbar/delivered.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/resturant/navbar/delivered.png')}}" alt="public">
                 </div>
                 <h6 class="card-subtitle">{{__('messages.delivered')}} {{__('messages.orders')}}
                 <span class="amount text--success">{{\App\Models\Order::where(['order_status'=>'delivered', 'restaurant_id'=>$restaurant->id])->count()}}</span></h6>
@@ -100,7 +100,7 @@
             <span class="order-info-seperator"></span>
             <div class="order-info-item" onclick="location.href='{{route('admin.order.list',['canceled'])}}?vendor[]={{$restaurant->id}}'">
                 <div class="order-info-icon">
-                    <img src="{{asset('/assets/admin/img/resturant/navbar/cancel.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/resturant/navbar/cancel.png')}}" alt="public">
                 </div>
                 <h6 class="card-subtitle">{{__('messages.canceled')}} {{__('messages.orders')}}
                 <span class="amount text--danger">{{\App\Models\Order::where(['order_status'=>'canceled', 'restaurant_id'=>$restaurant->id])->count()}}</span></h6>
@@ -141,13 +141,13 @@
                         {{--<span class="dropdown-header">{{__('messages.options')}}</span>
                         <a id="export-copy" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('assets/admin')}}/svg/illustrations/copy.svg"
+                                    src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
                                     alt="Image Description">
                             {{__('messages.copy')}}
                         </a>
                         <a id="export-print" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('assets/admin')}}/svg/illustrations/print.svg"
+                                    src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
                                     alt="Image Description">
                             {{__('messages.print')}}
                         </a>
@@ -159,20 +159,20 @@
                             <input type="hidden" name="type" value="excel">
                             <button type="submit">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                                src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                 alt="Image Description">
                                 {{__('messages.excel')}}
                             </button>
                         </form> --}}
                         <a target="__blank" id="export-excel" class="dropdown-item" href="{{route('admin.order.export-orders', ['type'=>'excel', 'restaurant_id'=>$restaurant->id])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                            src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                            src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                             alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
                         <a target="__blank" id="export-csv" class="dropdown-item" href="{{route('admin.order.export-orders', ['type'=>'csv', 'restaurant_id'=>$restaurant->id])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                            src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                            src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                             alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>
@@ -182,20 +182,20 @@
                             <input type="hidden" name="type" value="csv">
                             <button type="submit">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                 alt="Image Description">
                                 .{{__('messages.csv')}}
                             </button>
                         </form> --}}
 {{--                         <a id="export-csv" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a> --}}
                         {{--<a id="export-pdf" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('assets/admin')}}/svg/components/pdf.svg"
+                                    src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
                                     alt="Image Description">
                             {{__('messages.pdf')}}
                         </a>--}}

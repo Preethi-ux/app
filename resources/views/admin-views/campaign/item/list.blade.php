@@ -104,7 +104,7 @@
                         </table>
                         @if(count($campaigns) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

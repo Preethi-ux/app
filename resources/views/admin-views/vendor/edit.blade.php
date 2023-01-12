@@ -100,7 +100,7 @@
                                     <center>
                                         <img style="max-width: 100%;border: 1px solid #f4f4f4; border-radius: 10px; max-height:100px;margin-bottom:10px;"
                                             id="viewer"
-                                            onerror="this.src='{{asset('assets/admin/img/100x100/restaurant-default-image.png') }}'"
+                                            onerror="this.src='{{ asset('public/assets/admin/img/100x100/restaurant-default-image.png') }}'"
                                             src="{{ asset('storage/app/public/restaurant/' . $restaurant->logo) }}"
                                             alt="Product thumbnail" />
                                     </center>
@@ -123,7 +123,7 @@
                                         <center>
                                             <img style="max-width: 100%;border: 1px solid #f4f4f4; border-radius: 10px; max-height:100px;margin-bottom:10px;"
                                                 id="coverImageViewer"
-                                                onerror="this.src='{{asset('assets/admin/img/300x100/restaurant-default-image.png') }}'"
+                                                onerror="this.src='{{ asset('public/assets/admin/img/300x100/restaurant-default-image.png') }}'"
                                                 src="{{ asset('storage/app/public/restaurant/cover/' . $restaurant->cover_photo) }}"
                                                 alt="Product thumbnail" />
                                         </center>

@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
 
 @endpush
 
@@ -297,7 +297,7 @@
                             @if ($review->food)
                                 <a class="media align-items-center" href="{{route('admin.food.view',[$review->food['id']])}}">
                                     <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$review->food['image']}}"
-                                        onerror="this.src='{{asset('assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$review->food->name}} image">
+                                        onerror="this.src='{{asset('public/assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$review->food->name}} image">
                                     <div class="media-body">
                                         <h5 class="text-hover-primary mb-0">{{Str::limit($review->food['name'],10)}}</h5>
                                         <!-- Static Order ID -->

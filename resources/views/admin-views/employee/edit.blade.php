@@ -11,7 +11,7 @@
     <div class="page-header">
         <h1 class="page-header-title mb-2 text-capitalize">
             <div class="card-header-icon d-inline-flex mr-2 img">
-                <img src="{{asset('/assets/admin/img/employee.png')}}" alt="public">
+                <img src="{{asset('/public/assets/admin/img/employee.png')}}" alt="public">
             </div>
             <span>
                 {{__('messages.Employee')}} {{__('messages.update')}}
@@ -103,7 +103,7 @@
                                     </label>
                                     <center class="mt-auto mb-auto">
                                         <img class="initial-24" id="viewer"
-                                        onerror="this.src='{{asset('assets/admin/img/100x100/user.png')}}'"
+                                        onerror="this.src='{{asset('public/assets/admin/img/100x100/user.png')}}'"
                                         src="{{asset('storage/app/public/admin')}}/{{$e['image']}}" alt="Employee thumbnail"/>
                                     </center>
                                     <div class="form-group mt-3 mb-0">

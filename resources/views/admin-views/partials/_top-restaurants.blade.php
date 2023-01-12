@@ -1,7 +1,7 @@
 <!-- Header -->
 <div class="card-header">
     <h5 class="card-header-title">
-        <img src="{{asset('/assets/admin/img/dashboard/top-resturant.png')}}" alt="dashboard" class="card-header-icon">
+        <img src="{{asset('/public/assets/admin/img/dashboard/top-resturant.png')}}" alt="dashboard" class="card-header-icon">
         <span>{{ translate('Top Restaurants') }}</span>
     </h5>
     @php($params=session('dash_params'))
@@ -20,7 +20,7 @@
     @foreach($top_restaurants as $key=>$item)
         <li>
             <div class="top--resturant-item" onclick="location.href='{{route('admin.vendor.view', $item->id)}}'">
-                <img onerror="this.src='{{asset('assets/admin/img/100x100/1.png')}}'" src="{{asset('storage/app/public/restaurant')}}/{{$item['logo']}}">
+                <img onerror="this.src='{{asset('public/assets/admin/img/100x100/1.png')}}'" src="{{asset('storage/app/public/restaurant')}}/{{$item['logo']}}">
                 <div class="top--resturant-item-content">
                     <h5 class="name m-0">
                             {{Str::limit($item->name??__('messages.Restaurant deleted!'), 20, '...')}}

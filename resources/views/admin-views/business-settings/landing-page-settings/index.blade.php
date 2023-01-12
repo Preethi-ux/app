@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -14,7 +14,7 @@
         <!-- Page Header -->
         <h1 class="page-header-title text-capitalize">
             <div class="card-header-icon d-inline-flex mr-2 img">
-                <img src="{{asset('/assets/admin/img/landing-page.png')}}" class="mw-26px" alt="public">
+                <img src="{{asset('/public/assets/admin/img/landing-page.png')}}" class="mw-26px" alt="public">
             </div>
             <span>
                 {{ __('messages.landing_page_settings') }}

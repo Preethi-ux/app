@@ -15,7 +15,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/campaign.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/campaign.png')}}" alt="public">
                         </div>
                         <span>
                             {{__('messages.campaign')}}
@@ -96,7 +96,7 @@
                                     <td>
                                         <div style="overflow-x: hidden;overflow-y: hidden;">
                                             <img src="{{asset('storage/app/public/campaign')}}/{{$campaign['image']}}" style="width: 100%;aspect-ratio:2.53; max-width:124px;object-fit:cover"
-                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'">
+                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'">
                                         </div>
                                     </td>
                                     <td>
@@ -136,7 +136,7 @@
                         </table>
                         @if(count($campaigns) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

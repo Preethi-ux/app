@@ -37,7 +37,7 @@
             <!-- Collected Cash Card Example -->
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="resturant-card bg--2">
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/1.png')}}" alt="dashboard">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/1.png')}}" alt="dashboard">
                     <div class="for-card-text font-weight-bold  text-uppercase mb-1">{{__('messages.wallet')}} {{__('messages.balance')}}</div>
                     <div class="for-card-count">{{$customer->wallet_balance??0}}</div>
                 </div>
@@ -46,7 +46,7 @@
             <!-- Pending Requests Card Example -->
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="resturant-card bg--3">
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/3.png')}}" alt="dashboard">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/3.png')}}" alt="dashboard">
                     <div class="for-card-text font-weight-bold  text-uppercase mb-1">{{__('messages.loyalty_point')}} {{__('messages.balance')}}</div>
                     <div class="for-card-count">{{$customer->loyalty_point??0}}</div>
                 </div>
@@ -114,7 +114,7 @@
                         </table>
                         @if(count($orders) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>
@@ -163,7 +163,7 @@
                                 <div class="avatar avatar-circle">
                                     <img
                                         class="avatar-img"
-                                        onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                        onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                         src="{{asset('storage/app/public/profile/'.$customer->image)}}"
                                         alt="Image Description">
                                 </div>

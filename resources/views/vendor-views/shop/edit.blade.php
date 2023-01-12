@@ -3,9 +3,9 @@
 @section('title',__('messages.edit_restaurant'))
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{asset('public/assets/admin')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
      <!-- Custom styles for this page -->
-     <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
+     <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
      <meta name="csrf-token" content="{{ csrf_token() }}">
      <style>
         @media(max-width:375px){
@@ -35,7 +35,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/resturant.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/resturant.png')}}" alt="public">
                         </div>
                         <span>
                             {{__('messages.edit')}} {{__('messages.restaurant')}} {{__('messages.info')}}
@@ -85,7 +85,7 @@
                         <div class="card-body d-flex flex-column">
                             <center class="my-auto py-4 py-xl-5">
                                 <img style="border: 1px solid #f4f4f4; border-radius: 10px;width:100%;max-width:130px;aspect-ratio:1;object-fit:cover" id="viewer"
-                                onerror="this.src='{{asset('assets/admin/img/image-place-holder.png')}}'"
+                                onerror="this.src='{{asset('public/assets/admin/img/image-place-holder.png')}}'"
                                 src="{{asset('storage/app/public/restaurant/'.$shop->logo)}}" alt="Product thumbnail"/>
                             </center>
                             <div class="custom-file">
@@ -106,7 +106,7 @@
                         <div class="card-body">
                             <center class="my-auto py-4 py-xl-5">
                                 <img style="max-width: 450px;width:100%;border: 1px solid #f4f4f4; border-radius: 10px;aspect-ratio: calc(100% / 3)" id="coverImageViewer"
-                                onerror="this.src='{{asset('assets/admin/img/restaurant_cover.jpg')}}'"
+                                onerror="this.src='{{asset('public/assets/admin/img/restaurant_cover.jpg')}}'"
                                 src="{{asset('storage/app/public/restaurant/cover/'.$shop->cover_photo)}}" alt="Product thumbnail"/>
                             </center>
                             <div class="custom-file">

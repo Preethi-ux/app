@@ -31,28 +31,28 @@
 
             <h4 class="title">{{$data['delivered']}}</h4>
             <span class="subtitle">{{__('messages.delivered')}} {{__('messages.orders')}}</span>
-            <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/1.png')}}" alt="dashboard">
+            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/1.png')}}" alt="dashboard">
         </div>
     </div>
     <div class="col-xl-3 col-sm-6">
         <div class="resturant-card dashboard--card bg--3 cursor-pointer" onclick="location.href='{{route('admin.order.list',['canceled'])}}'">
             <h4 class="title">{{$data['canceled']}}</h4>
             <span class="subtitle">{{__('messages.canceled')}} {{__('messages.orders')}}</span>
-            <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/2.png')}}" alt="dashboard">
+            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/2.png')}}" alt="dashboard">
         </div>
     </div>
     <div class="col-xl-3 col-sm-6">
         <div class="resturant-card dashboard--card bg--5 cursor-pointer" onclick="location.href='{{route('admin.order.list',['refunded'])}}'">
             <h4 class="title">{{$data['refunded']}}</h4>
             <span class="subtitle">{{__('messages.refunded')}} {{__('messages.orders')}}</span>
-            <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/3.png')}}" alt="dashboard">
+            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/3.png')}}" alt="dashboard">
         </div>
     </div>
     <div class="col-xl-3 col-sm-6">
         <div class="resturant-card dashboard--card bg--14 cursor-pointer" onclick="location.href='{{route('admin.order.list',['failed'])}}'">
             <h4 class="title">{{$data['refund_requested']}}</h4>
             <span class="subtitle">{{__('messages.payment')}} {{__('messages.failed')}} {{__('messages.orders')}}</span>
-            <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/4.png')}}" alt="dashboard">
+            <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/4.png')}}" alt="dashboard">
         </div>
     </div>
 </div>

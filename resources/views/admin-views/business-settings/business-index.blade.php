@@ -11,7 +11,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h1 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/business.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/business.png')}}" alt="public">
                         </div>
                         <span>
                             {{ __('messages.business') }}
@@ -151,7 +151,7 @@
                                         <center class="h-100px">
                                             <img class="initial-10"
                                                 id="viewer"
-                                                onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg') }}'"
+                                                onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
                                                 src="{{ asset('storage/app/public/business/' . $logo) }}" alt="logo image" />
                                         </center>
                                         <label class="input-label mt-2"> {{ __('messages.logo') }} <small class="text-danger">* ( {{ __('messages.ratio') }} 300x100 )</small></label>
@@ -169,7 +169,7 @@
                                     <div class="form-group mb-0">
                                         <center class="h-100px">
                                             <img class="initial-10" id="iconViewer"
-                                                onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg') }}'"
+                                                onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
                                                 src="{{ asset('storage/app/public/business/' . $icon) }}" alt="Fav icon" />
                                         </center>
                                         <label class="input-label mt-2"> {{ __('messages.Fav Icon') }}<small class="text-danger">* ( {{ __('messages.ratio') }} 150x150 )</small></label>

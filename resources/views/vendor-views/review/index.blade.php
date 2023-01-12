@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/review.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/review.png')}}" alt="public">
                         </div>
                         <span>
                             {{__('messages.customers')}} {{__('messages.reviews')}}
@@ -68,7 +68,7 @@
                                     <a class="absolute--link" href="{{route('vendor.food.view',[$review->food['id']])}}">
                                     </a>
                                     <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$review->food['image']}}"
-                                    onerror="this.src='{{asset('/assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$review->food->name}} image">
+                                    onerror="this.src='{{asset('/public/assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$review->food->name}} image">
                                     <div class="media-body">
                                         <h5 class="text-hover-primary mb-0">{{Str::limit($review->food['name'],10)}}</h5>
                                         <!-- Static -->
@@ -115,7 +115,7 @@
                 </table>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

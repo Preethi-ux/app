@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -78,7 +78,7 @@
                         {{__('messages.collected_cash_by_restaurant')}}
                     </div>
                     <div class="d-flex align-items-center justify-content-center mt-3">
-                        <img class="cash-icon mr-3" src="{{asset('/assets/admin/img/transactions/cash.png')}}" alt="transactions">
+                        <img class="cash-icon mr-3" src="{{asset('/public/assets/admin/img/transactions/cash.png')}}" alt="transactions">
                         <h2
 
                             class="cash--title">{{\App\CentralLogics\Helpers::format_currency($wallet->collected_cash)}}
@@ -98,7 +98,7 @@
                     <div class="resturant-card  bg--2">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->pending_withdraw)}}</h4>
                         <span class="subtitle">{{__('messages.pending')}} {{__('messages.withdraw')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                     <div class="resturant-card  bg--3">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->total_withdrawn)}}</h4>
                         <span class="subtitle">{{__('messages.total')}} {{__('messages.withdrawn')}} {{__('messages.amount')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -116,7 +116,7 @@
                     <div class="resturant-card  bg--5">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->balance)}}</h4>
                         <span class="subtitle">{{__('messages.withdraw_able_balance')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-balance.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-balance.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -125,7 +125,7 @@
                     <div class="resturant-card  bg--1">
                         <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($wallet->total_earning)}}</h4>
                         <span class="subtitle">{{__('messages.total_earning')}}</span>
-                        <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/earning.png')}}" alt="transactions">
+                        <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/earning.png')}}" alt="transactions">
                     </div>
                 </div>
 
@@ -150,7 +150,7 @@
                             <div class="col-lg-6">
                                 <div class="resturant--info-address">
                                     <div class="logo">
-                                        <img onerror="this.src='{{asset('assets/admin/img/100x100/restaurant-default-image.png')}}'"
+                                        <img onerror="this.src='{{asset('public/assets/admin/img/100x100/restaurant-default-image.png')}}'"
                                             src="{{asset('storage/app/public/restaurant')}}/{{$restaurant->logo}}">
                                     </div>
                                     <ul class="address-info list-unstyled list-unstyled-py-3 text-dark">
@@ -201,7 +201,7 @@
                     <div class="card-body d-flex flex-column justify-content-center">
                         <div class="resturant--info-address">
                             <div class="avatar avatar-xxl avatar-circle avatar-border-lg">
-                                <img class="avatar-img" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                <img class="avatar-img" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                             src="{{asset('storage/app/public/vendor')}}/{{$restaurant->vendor->image}}" alt="Image Description">
                             </div>
                             <ul class="address-info address-info-2 list-unstyled list-unstyled-py-3 text-dark">

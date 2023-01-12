@@ -3,7 +3,7 @@
 @section('title','Update campaign')
 
 @push('css_or_js')
-    <link href="{{asset('assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -107,7 +107,7 @@
                                         <center id="image-viewer-section" class="my-auto">
                                             <img class="initial-14" id="viewer"
                                             src="{{asset('storage/app/public/campaign')}}/{{$campaign->image}}"
-                                            onerror="this.src='{{asset('assets/admin/img/100x100/2.png')}}'" alt="campaign image"/>
+                                            onerror="this.src='{{asset('public/assets/admin/img/100x100/2.png')}}'" alt="campaign image"/>
                                         </center>
 
                                         <div class="form-group mt-3 mb-0">
@@ -183,7 +183,7 @@
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group mb-0">
                                                 <label class="input-label" for="exampleFormControlSelect1">{{__('messages.sub_category')}}<span
-                                                        class="input-label-secondary" title="{{__('messages.category_required_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{__('messages.category_required_warning')}}"></span></label>
+                                                        class="input-label-secondary" title="{{__('messages.category_required_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{__('messages.category_required_warning')}}"></span></label>
                                                 @php($product_category = json_decode($campaign->category_ids))
                                                 <select name="sub_category_id" id="sub-categories" data-id="{{count($product_category)>=2?$product_category[1]->id:''}}" class="form-control js-select2-custom"
                                                         onchange="getRequest('{{url('/')}}/admin/food/get-categories?parent_id='+this.value,'sub-sub-categories')">
@@ -203,7 +203,7 @@
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group mb-0">
                                                 <label class="input-label" for="exampleFormControlSelect1">{{__('messages.addon')}}<span
-                                                        class="input-label-secondary" title="{{__('messages.restaurant_required_warning')}}"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="{{__('messages.restaurant_required_warning')}}"></span></label>
+                                                        class="input-label-secondary" title="{{__('messages.restaurant_required_warning')}}"><img src="{{asset('/public/assets/admin/img/info-circle.svg')}}" alt="{{__('messages.restaurant_required_warning')}}"></span></label>
                                                 <select name="addon_ids[]" id="add_on" class="form-control js-select2-custom" multiple="multiple">
                                                     @foreach(\App\Models\AddOn::orderBy('name')->get() as $addon)
                                                         <option value="{{$addon['id']}}" {{in_array($addon->id,json_decode($campaign['add_ons'],true))?'selected':''}}>{{$addon['name']}}</option>
@@ -411,7 +411,7 @@
             @endif
         });
     </script>
-    <script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
 
     <script>
         $('#choice_attributes').on('change', function () {

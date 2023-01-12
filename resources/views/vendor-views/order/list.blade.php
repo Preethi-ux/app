@@ -17,23 +17,23 @@
                 <h2 class="page-header-title align-items-center text-capitalize py-2 mr-2">
                     <div class="card-header-icon d-inline-flex mr-2 img">
                         @if(str_replace('_',' ',$status) == 'All')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/order.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/order.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Pending')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/pending.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/pending.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Confirmed')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/confirm.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/confirm.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Cooking')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/cooking.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/cooking.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Ready for delivery')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/ready.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/ready.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Food on the way')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/ready.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/ready.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Delivered')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/ready.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/ready.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Refunded')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/order.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/order.png')}}" alt="public" style="max-width:24px">
                         @elseif(str_replace('_',' ',$status) == 'Scheduled')
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/order.png')}}" alt="public" style="max-width:24px">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/order.png')}}" alt="public" style="max-width:24px">
                         @endif
                     </div>
                     <span>
@@ -82,13 +82,13 @@
                                 <span class="dropdown-header">{{__('messages.options')}}</span>
                                 <a id="export-copy" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/illustrations/copy.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
                                             alt="Image Description">
                                     {{__('messages.copy')}}
                                 </a>
                                 <a id="export-print" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/illustrations/print.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
                                             alt="Image Description">
                                     {{__('messages.print')}}
                                 </a>
@@ -97,19 +97,19 @@
                                     class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                                 <a id="export-excel" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                             alt="Image Description">
                                     {{__('messages.excel')}}
                                 </a>
                                 <a id="export-csv" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                             alt="Image Description">
                                     .{{__('messages.csv')}}
                                 </a>
                                 <a id="export-pdf" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/components/pdf.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
                                             alt="Image Description">
                                     {{__('messages.pdf')}}
                                 </a>
@@ -358,7 +358,7 @@
             </div>
             @if(count($orders) === 0)
             <div class="empty--data">
-                <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>
@@ -465,7 +465,7 @@
                 },
                 language: {
                     zeroRecords: '<div class="text-center p-4">' +
-                        '<img class="mb-3" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">' +
+                        '<img class="mb-3" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">' +
                         '<p class="mb-0">No data to show</p>' +
                         '</div>'
                 }

@@ -11,7 +11,7 @@
         <div class="page-header">
             <h1 class="page-header-title mb-2 text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/assets/admin/img/clean-database.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/clean-database.png')}}" alt="public">
                 </div>
                 <span>
                     {{ translate('Clean database') }}

@@ -61,7 +61,7 @@
                             <td>{{$key+$delivery_men->firstItem()}}</td>
                             <td>
                                 <a class="media align-items-center" href="{{route('vendor.delivery-man.preview',[$dm['id']])}}">
-                                    <img class="avatar avatar-lg mr-3" onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                    <img class="avatar avatar-lg mr-3" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                             src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}" alt="{{$dm['f_name']}} {{$dm['l_name']}}">
                                     <div class="media-body">
                                         <h5 class="text-hover-primary mb-0">{{$dm['f_name'].' '.$dm['l_name']}}</h5>
@@ -122,7 +122,7 @@
                 </table>
                 @if(count($delivery_men) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

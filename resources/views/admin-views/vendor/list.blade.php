@@ -49,7 +49,7 @@
                     @php($total_retaurants = isset($total_retaurants) ? $total_retaurants : 0)
                     <h4 class="title">{{$total_retaurants}}</h4>
                     <span class="subtitle">{{translate('messages.total_restaurants')}}</span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant/map-pin.png')}}" alt="resturant">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/resturant/map-pin.png')}}" alt="resturant">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
@@ -58,7 +58,7 @@
                     @php($active_restaurants = isset($active_restaurants) ? $active_restaurants : 0)
                     <h4 class="title">{{$active_restaurants}}</h4>
                     <span class="subtitle">{{translate('messages.active_restaurants')}}</span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant/active-rest.png')}}" alt="resturant">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/resturant/active-rest.png')}}" alt="resturant">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
@@ -67,7 +67,7 @@
                     @php($inactive_restaurants = isset($inactive_restaurants) ? $inactive_restaurants : 0)
                     <h4 class="title">{{$inactive_restaurants}}</h4>
                     <span class="subtitle">{{translate('messages.inactive_restaurants')}}</span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant/inactive-rest.png')}}" alt="resturant">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/resturant/inactive-rest.png')}}" alt="resturant">
                 </div>
             </div>
             <div class="col-xl-3 col-sm-6">
@@ -75,7 +75,7 @@
                     @php($data = \App\Models\Restaurant::where('created_at', '<=', now()->subDays(30)->toDateTimeString())->count())
                     <h4 class="title">{{$data}}</h4>
                     <span class="subtitle">{{translate('messages.newly_joined_restaurants')}}</span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant/new-rest.png')}}" alt="resturant">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/resturant/new-rest.png')}}" alt="resturant">
                 </div>
             </div>
         </div>
@@ -147,13 +147,13 @@
                                     {{--<span class="dropdown-header">{{__('messages.options')}}</span>
                                     <a id="export-copy" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('assets/admin')}}/svg/illustrations/copy.svg"
+                                                src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
                                                 alt="Image Description">
                                         {{__('messages.copy')}}
                                     </a>
                                     <a id="export-print" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('assets/admin')}}/svg/illustrations/print.svg"
+                                                src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
                                                 alt="Image Description">
                                         {{__('messages.print')}}
                                     </a>
@@ -161,20 +161,20 @@
                                     <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                                     <a target="__blank" id="export-excel" class="dropdown-item" href="{{route('admin.vendor.restaurants-export', ['type'=>'excel'])}}">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                                        src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                         alt="Image Description">
                                         {{__('messages.excel')}}
                                     </a>
 
                                     <a id="export-excel" class="dropdown-item" href="{{route('admin.vendor.restaurants-export', ['type'=>'csv'])}}">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                    src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                                     alt="Image Description">
                                                     {{__('messages.csv')}}
                                     </a>
 {{--                                     <a id="export-excel" class="dropdown-item" href="">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                                                src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                                 alt="Image Description">
                                         {{__('messages.excel')}}
                                     </a> --}}
@@ -185,7 +185,7 @@
                                         <a id="export-excel" class="dropdown-item" href="javascript:;">
                                             <button type="submit">
                                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                    src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                                     alt="Image Description">
                                                     {{__('messages.csv')}}
                                             </button>
@@ -194,7 +194,7 @@
                                     </form> --}}
                                     {{--<a id="export-pdf" class="dropdown-item" href="javascript:;">
                                         <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                                src="{{asset('assets/admin')}}/svg/components/pdf.svg"
+                                                src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
                                                 alt="Image Description">
                                         {{__('messages.pdf')}}
                                     </a>--}}
@@ -233,7 +233,7 @@
                                     <td>
                                         <a href="{{route('admin.vendor.view', $dm->id)}}" alt="view restaurant" class="table-rest-info">
                                         <img
-                                                onerror="this.src='{{asset('assets/admin/img/100x100/food-default-image.png')}}'"
+                                                onerror="this.src='{{asset('public/assets/admin/img/100x100/food-default-image.png')}}'"
                                                 src="{{asset('storage/app/public/restaurant')}}/{{$dm['logo']}}">
                                             <div class="info">
                                                 <span class="d-block text-body">
@@ -298,7 +298,7 @@
                         </table>
                         @if(count($restaurants) === 0)
                         <div class="empty--data">
-                            <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                             <h5>
                                 {{translate('no_data_found')}}
                             </h5>

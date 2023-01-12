@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/assets/admin/img/payment.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/payment.png')}}" alt="public">
                 </div>
                 <span>
                     {{__('messages.customer_loyalty_point')}} {{__('messages.report')}}
@@ -93,7 +93,7 @@
                     <span class="subtitle">
                         {{$debit}}
                     </span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/3.png')}}" alt="dashboard">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/3.png')}}" alt="dashboard">
                 </div>
             </div>
             <!--Debit earned End-->
@@ -104,7 +104,7 @@
                     <span class="subtitle">
                         {{$credit}}
                     </span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/4.png')}}" alt="dashboard">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/4.png')}}" alt="dashboard">
                 </div>
             </div>
             <!--credit earned end-->
@@ -115,7 +115,7 @@
                     <span class="subtitle">
                         {{$balance}}
                     </span>
-                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/1.png')}}" alt="dashboard">
+                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/1.png')}}" alt="dashboard">
                 </div>
             </div>
             <!--balance earned end-->
@@ -172,7 +172,7 @@
                     </table>
                     @if(!$transactions)
                     <div class="empty--data">
-                        <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -205,10 +205,10 @@
 
 @push('script_2')
 
-    <script src="{{asset('assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/vendor/chart.js/dist/Chart.min.js"></script>
     <script
-        src="{{asset('assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{asset('assets/admin')}}/js/hs.chartjs-matrix.js"></script>
+        src="{{asset('public/assets/admin')}}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{asset('public/assets/admin')}}/js/hs.chartjs-matrix.js"></script>
 
     <script>
         $(document).on('ready', function () {

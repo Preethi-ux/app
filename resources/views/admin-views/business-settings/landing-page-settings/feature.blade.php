@@ -2,7 +2,7 @@
 @section('title', __('messages.landing_page_settings'))
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('assets/admin/css/croppie.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/admin/css/croppie.css') }}" rel="stylesheet">
 @endpush
 @section('content')
     <div class="content container-fluid">
@@ -11,7 +11,7 @@
         <!-- Page Header -->
         <h1 class="page-header-title text-capitalize">
             <div class="card-header-icon d-inline-flex mr-2 img">
-                <img src="{{asset('/assets/admin/img/landing-page.png')}}" class="mw-26px" alt="public">
+                <img src="{{asset('/public/assets/admin/img/landing-page.png')}}" class="mw-26px" alt="public">
             </div>
             <span>
                 {{ __('messages.landing_page_settings') }}
@@ -91,7 +91,7 @@
                                         {{ __('messages.size') }}: 140 X 140 px )</small></label>
                                 <center id="image-viewer-section" class="pt-2 mt-auto mb-auto">
                                     <img class="initial-5" id="viewer"
-                                        src="{{asset('assets/admin/img/400x400/img2.jpg') }}" alt="Image" />
+                                        src="{{ asset('public/assets/admin/img/400x400/img2.jpg') }}" alt="Image" />
                                 </center>
                                 <div class="custom-file mt-2">
                                     <input type="file" name="image" id="customFileEg1" class="custom-file-input"
@@ -128,8 +128,8 @@
                                         <td>
                                             <div class="media align-items-center">
                                                 <img class="avatar avatar-lg mr-3"
-                                                    src="{{asset('assets/landing/image') }}/{{ $feature_item['img'] }}"
-                                                    onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg') }}'"
+                                                    src="{{ asset('public/assets/landing/image') }}/{{ $feature_item['img'] }}"
+                                                    onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
                                                     alt="{{ $feature_item['title'] }}">
                                             </div>
                                         </td>
@@ -163,7 +163,7 @@
                     </table>
                     @if(count($feature) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -192,7 +192,7 @@
         $(document).on('ready', function() {});
 
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('assets/admin/img/100x100/user.png')}}');
+            $('#viewer').attr('src','{{asset('public/assets/admin/img/100x100/user.png')}}');
         })
     </script>
 @endpush

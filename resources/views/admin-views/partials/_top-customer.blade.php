@@ -1,7 +1,7 @@
 <!-- Header -->
 <div class="card-header">
     <h5 class="card-header-title">
-        <img src="{{asset('/assets/admin/img/dashboard/statistics.png')}}" alt="dashboard" class="card-header-icon">
+        <img src="{{asset('/public/assets/admin/img/dashboard/statistics.png')}}" alt="dashboard" class="card-header-icon">
         <span>{{trans('messages.top_customers')}}</span>
     </h5>
     @php($params=session('dash_params'))
@@ -23,7 +23,7 @@
                     <label class="label_1">Orders : {{$item['count']}}</label>
                     <center class="mt-6">
                         <img class="initial-41"
-                             onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                              src="{{asset('storage/app/public/profile/'.$item->customer->image??'')}}">
                     </center>
                     <div class="text-center mt-2">

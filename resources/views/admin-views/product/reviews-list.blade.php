@@ -50,7 +50,7 @@
                                             @if ($review->food)
                                                 <a class="media align-items-center" href="{{route('admin.food.view',[$review->food['id']])}}">
                                                     <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$review->food['image']}}"
-                                                        onerror="this.src='{{asset('assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$review->food->name}} image">
+                                                        onerror="this.src='{{asset('public/assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$review->food->name}} image">
                                                     <div class="media-body">
                                                         <h5 class="text-hover-primary mb-0">{{Str::limit($review->food['name'],20,'...')}}</h5>
                                                     </div>
@@ -93,7 +93,7 @@
                             </table>
                             @if(count($reviews) === 0)
                             <div class="empty--data">
-                                <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                                <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                                 <h5>
                                     {{translate('no_data_found')}}
                                 </h5>

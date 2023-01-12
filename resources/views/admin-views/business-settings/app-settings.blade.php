@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/assets/admin/img/app.png')}}" class="mw-26px" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/app.png')}}" class="mw-26px" alt="public">
                 </div>
                 <span>
                     {{__('messages.app_settings')}}

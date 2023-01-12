@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="{{asset('assets/admin/css/tags-input.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/assets/admin/css/tags-input.min.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -126,7 +126,7 @@
                                     @else
                                         <center id="image-viewer-section" class="my-auto py-3">
                                             <img class="initial-52" id="viewer"
-                                                src="{{asset('assets/admin/img/400x400/img2.jpg') }}" alt="banner image" />
+                                                src="{{ asset('public/assets/admin/img/400x400/img2.jpg') }}" alt="banner image" />
                                         </center>
                                     @endif
                                     <div class="custom-file">
@@ -470,7 +470,7 @@
         });
     </script>
 
-    <script src="{{asset('assets/admin') }}/js/tags-input.min.js"></script>
+    <script src="{{ asset('public/assets/admin') }}/js/tags-input.min.js"></script>
 
     <script>
         $('#choice_attributes').on('change', function() {

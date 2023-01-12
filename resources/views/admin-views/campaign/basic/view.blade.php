@@ -20,7 +20,7 @@
                 <div class="row align-items-md-center">
                     <div class="col-md-4 mb-3 mb-md-0">
                             <img class="rounded initial-13" src="{{asset('storage/app/public/campaign')}}/{{$campaign->image}}"
-                                 onerror="this.src='{{asset('/assets/admin/img/900x400/img1.png')}}'"
+                                 onerror="this.src='{{asset('/public/assets/admin/img/900x400/img1.png')}}'"
                                  alt="Image Description">
                     </div>
                     <div class="col-md-8">
@@ -103,7 +103,7 @@
                                 <td>
                                     <a href="{{route('admin.vendor.view', $dm->id)}}" alt="view restaurant" class="table-rest-info">
                                     <img
-                                            onerror="this.src='{{asset('assets/admin/img/100x100/food-default-image.png')}}'"
+                                            onerror="this.src='{{asset('public/assets/admin/img/100x100/food-default-image.png')}}'"
                                             src="{{asset('storage/app/public/restaurant')}}/{{$dm['logo']}}">
                                         <div class="info">
                                             <span class="d-block text-body">

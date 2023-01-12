@@ -13,7 +13,7 @@
                 <div class="search--button-wrapper justify-content-end">
                     <h2 class="page-header-title card-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/resturant-panel/page-title/category.png')}}" alt="public">
+                            <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/category.png')}}" alt="public">
                         </div>
                         <span>
                             {{__('messages.sub_category')}} {{__('messages.list')}}<span class="badge badge-soft-dark ml-2" id="itemCount">{{$categories->total()}}</span>
@@ -73,7 +73,7 @@
                     </table>
                     @if(count($categories) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -113,7 +113,7 @@
                 },
                 language: {
                     zeroRecords: '<div class="text-center p-4">' +
-                    '<img class="mb-3" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">' +
+                    '<img class="mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">' +
                     '<p class="mb-0">No data to show</p>' +
                     '</div>'
                 }

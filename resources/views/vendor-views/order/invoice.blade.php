@@ -53,7 +53,7 @@
             </div>
             <div style="max-width:376px;margin:0 auto;padding-left:10px;padding-right:10px">
                 <div class="pt-3">
-                    <img src="{{asset('/assets/admin/img/restaurant-invoice.png')}}" style="width:100%;height:70px;object-fit:contain;" alt="">
+                    <img src="{{asset('/public/assets/admin/img/restaurant-invoice.png')}}" style="width:100%;height:70px;object-fit:contain;" alt="">
                 </div>
                 <div class="text-center pt-2 mb-3">
                     <h2 style="line-height: 1">{{ $order->restaurant->name }}</h2>

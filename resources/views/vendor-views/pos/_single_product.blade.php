@@ -1,7 +1,7 @@
 <div class="product-card card" onclick="quickView('{{$product->id}}')"  style="cursor: pointer;">
     <div class="card-header inline_product clickable p-0" style="height:100px;width:100%;overflow:hidden;">
         <img src="{{asset('storage/app/public/product')}}/{{$product['image']}}" 
-                onerror="this.src='{{asset('assets/admin/img/100x100/food-default-image.png')}}'"
+                onerror="this.src='{{asset('public/assets/admin/img/100x100/food-default-image.png')}}'"
                 style="width: 100%; border-radius: 5%;">
     </div>
 

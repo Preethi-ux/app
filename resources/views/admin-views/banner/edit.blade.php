@@ -75,7 +75,7 @@
                                             <small class="text-danger">* ( {{__('messages.ratio')}} 3:1 )</small>
                                         </label>
                                         <center class="my-auto">
-                                            <img class="initial-2" id="viewer" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" alt="campaign image"/>
+                                            <img class="initial-2" id="viewer" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" src="{{asset('storage/app/public/banner')}}/{{$banner['image']}}" alt="campaign image"/>
                                         </center>
                                         <div class="form-group">
                                             <div class="custom-file">

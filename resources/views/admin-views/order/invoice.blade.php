@@ -16,7 +16,7 @@
                 <hr class="non-printable">
                 <div class="initial-38-1">
                     <div class="pt-3">
-                        <img src="{{asset('/assets/admin/img/restaurant-invoice.png')}}" class="initial-38-2" alt="">
+                        <img src="{{asset('/public/assets/admin/img/restaurant-invoice.png')}}" class="initial-38-2" alt="">
                     </div>
                     @if ($order->restaurant)
                     <div class="text-center pt-2 mb-3">

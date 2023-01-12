@@ -25,7 +25,7 @@
             <div class="card-body">
                 <div class="row align-items-md-center">
                     <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
-                            <img class="rounded initial-16" src="{{asset('storage/app/public/campaign')}}/{{$campaign['image']}}" onerror="this.src='{{asset('/assets/admin/img/900x400/img1.png')}}'" alt="Image Description">
+                            <img class="rounded initial-16" src="{{asset('storage/app/public/campaign')}}/{{$campaign['image']}}" onerror="this.src='{{asset('/public/assets/admin/img/900x400/img1.png')}}'" alt="Image Description">
                     </div>
                     <div class="col-md-6">
                         <span class="d-block mb-1">
@@ -59,7 +59,7 @@
                             <a href="{{route('admin.vendor.view', $campaign->restaurant_id)}}" class="d-block">
                                 <img
                                     class="avatar-img avatar-circle initial-17"
-                                    onerror="this.src='{{asset('/assets/admin/img/100x100/restaurant-default-image.png')}}'"
+                                    onerror="this.src='{{asset('/public/assets/admin/img/100x100/restaurant-default-image.png')}}'"
                                     src="{{asset('storage/app/public/restaurant/'.$campaign->restaurant->logo)}}"
                                     alt="Image Description">
                                 <h2 class="m-0">{{$campaign->restaurant['name']}}</h2>
@@ -169,13 +169,13 @@
                             <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                             <a id="export-excel" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                                        src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                         alt="Image Description">
                                 {{__('messages.excel')}}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                        src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                         alt="Image Description">
                                 .{{__('messages.csv')}}
                             </a>

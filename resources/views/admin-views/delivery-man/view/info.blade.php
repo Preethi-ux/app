@@ -64,7 +64,7 @@
                                 <h5 class="subtitle">
                                     {{__('messages.total')}} {{__('messages.delivered')}} {{__('messages.orders')}}
                                 </h5>
-                                <img class="resturant-icon" src="{{asset('/assets/admin/img/tick.png')}}" alt="img">
+                                <img class="resturant-icon" src="{{asset('/public/assets/admin/img/tick.png')}}" alt="img">
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@
                                 <h5 class="subtitle">
                                     {{__('messages.cash_in_hand')}}
                                 </h5>
-                                <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
+                                <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/withdraw-amount.png')}}" alt="transactions">
                             </div>
                         </div>
 
@@ -90,7 +90,7 @@
                                 <h5 class="subtitle">
                                     {{__('messages.total_earning')}}
                                 </h5>
-                                <img class="resturant-icon" src="{{asset('/assets/admin/img/transactions/pending.png')}}" alt="transactions">
+                                <img class="resturant-icon" src="{{asset('/public/assets/admin/img/transactions/pending.png')}}" alt="transactions">
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                     <div class="col-md-6">
                         <div class="d-flex align-items-center justify-content-center">
                             <img class="avatar avatar-xxl avatar-4by3 mr-4 mw-120px initial-22"
-                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                  src="{{asset('storage/app/public/delivery-man')}}/{{$dm['image']}}"
                                  alt="Image Description">
                             <div class="d-block">
@@ -367,7 +367,7 @@
                                    href="{{route('admin.customer.view',[$review['user_id']])}}">
                                     <div class="avatar rounded">
                                         <img class="avatar-img" width="75" height="75"
-                                             onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
+                                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
                                              src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
                                              alt="Image Description">
                                     </div>
@@ -397,7 +397,7 @@
                             </td>
                             {{--<td>
                                 @foreach(json_decode($review['attachment'],true) as $attachment)
-                                    <img width="100" onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public')}}/{{$attachment}}">
+                                    <img width="100" onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'" src="{{asset('storage/app/public')}}/{{$attachment}}">
                                 @endforeach
                             </td>--}}
                             <td>
@@ -409,7 +409,7 @@
                 </table>
                 @if(count($reviews) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>

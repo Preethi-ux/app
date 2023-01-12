@@ -1,7 +1,7 @@
 <!-- Header -->
 <div class="card-header">
     <h5 class="card-header-title align-items-center d-flex">
-        <img src="{{asset('/assets/admin/img/dashboard/top-selling.png')}}" alt="dashboard" class="card-header-icon mr-2 mb-1">
+        <img src="{{asset('/public/assets/admin/img/dashboard/top-selling.png')}}" alt="dashboard" class="card-header-icon mr-2 mb-1">
         <span>{{trans('messages.top_selling_foods')}}</span>
     </h5>
 </div>
@@ -19,7 +19,7 @@
                         </span>
                         <img class="rounded" style="width: 100%;height: 120px;object-fit:cover"
                             src="{{asset('storage/app/public/product')}}/{{$item['image']}}"
-                            onerror="this.src='{{asset('assets/admin/img/100x100/food.png')}}'" alt="{{$item->name}} image">
+                            onerror="this.src='{{asset('public/assets/admin/img/100x100/food.png')}}'" alt="{{$item->name}} image">
                     </div>
                     <div class="text-center mt-2">
                         <span>{{$item['name']}}</span>

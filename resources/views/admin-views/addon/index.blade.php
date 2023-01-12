@@ -277,7 +277,7 @@
                     </table>
                     @if(count($addons) === 0)
                     <div class="empty--data">
-                        <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                        <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                         <h5>
                             {{translate('no_data_found')}}
                         </h5>
@@ -319,7 +319,7 @@
           },
           language: {
             zeroRecords: '<div class="text-center p-4">' +
-                '<img class="mb-3" src="{{asset('assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">' +
+                '<img class="mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">' +
                 '<p class="mb-0">No data to show</p>' +
                 '</div>'
           }

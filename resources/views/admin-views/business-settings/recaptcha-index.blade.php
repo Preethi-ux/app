@@ -21,7 +21,7 @@
                     <div class="card-body p-30px">
                         <div class="flex-between">
                             <h3>
-                                <img src="{{asset('/assets/admin/img/recapcha.png')}}" alt="">
+                                <img src="{{asset('/public/assets/admin/img/recapcha.png')}}" alt="">
                                 {{__('messages.google')}} {{__('messages.reCaptcha')}}
                             </h3>
                             <div class="btn-sm btn-dark p-2 initial-hidden" data-toggle="modal" data-target="#recaptcha-modal">

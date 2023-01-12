@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title mb-2 text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/assets/admin/img/orders.png')}}" alt="">
+                    <img src="{{asset('/public/assets/admin/img/orders.png')}}" alt="">
                 </div>
                 {{__('messages.'.$status)}} {{__('messages.orders')}} <span class="badge badge-soft-dark ml-2">{{$total}}</span>
             </h1>
@@ -52,13 +52,13 @@
                                 <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                                 <a id="export-excel" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/components/excel.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                             alt="Image Description">
                                     {{__('messages.excel')}}
                                 </a>
                                 <a id="export-csv" class="dropdown-item" href="javascript:;">
                                     <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                            src="{{asset('assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                            src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                             alt="Image Description">
                                     .{{__('messages.csv')}}
                                 </a>
@@ -315,7 +315,7 @@
             </div>
             @if(!$orders)
             <div class="empty--data">
-                <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                 <h5>
                     {{translate('no_data_found')}}
                 </h5>
@@ -473,7 +473,7 @@
 @endsection
 
 @push('script_2')
-    <!-- <script src="{{asset('assets/admin')}}/js/bootstrap-select.min.js"></script> -->
+    <!-- <script src="{{asset('public/assets/admin')}}/js/bootstrap-select.min.js"></script> -->
     <script>
         <?php 
             $filter_count=0;
@@ -580,7 +580,7 @@
                 },
                 language: {
                     zeroRecords: '<div class="text-center p-4">' +
-                        '<img class="mb-3" src="{{asset('assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">' +
+                        '<img class="mb-3" src="{{asset('public/assets/admin')}}/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">' +
                         '<p class="mb-0">No data to show</p>' +
                         '</div>'
                 }

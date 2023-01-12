@@ -28,7 +28,7 @@
      <div class="page-header">
         <h2 class="page-header-title text-capitalize">
             <div class="card-header-icon d-inline-flex mr-2 img">
-                <img src="{{asset('/assets/admin/img/resturant-panel/page-title/employee-role.png')}}" alt="public">
+                <img src="{{asset('/public/assets/admin/img/resturant-panel/page-title/employee-role.png')}}" alt="public">
             </div>
             <span>
                 {{__('messages.Employee')}} {{__('messages.update')}}
@@ -92,7 +92,7 @@
                                     </h5>
                                     <center class="my-auto">
                                         <img style="width:120px;aspect-ratio:1;object-fit:cover" id="viewer"
-                                        onerror="this.src='{{asset('assets/front-end/img/image-place-holder.png')}}'"
+                                        onerror="this.src='{{asset('public/assets/front-end/img/image-place-holder.png')}}'"
                                         src="{{asset('storage/app/public/vendor')}}/{{$e['image']}}" alt="Employee thumbnail"/>
                                     </center>
                                     <label class="form-label mt-3">{{ translate('Employee image size max 2 MB') }} <span class="text-danger">*</span></label>

@@ -12,7 +12,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/assets/admin/img/export.png')}}" alt="">
+                    <img src="{{asset('/public/assets/admin/img/export.png')}}" alt="">
                 </div>
                 {{__('messages.categories')}} {{__('messages.bulk_import')}}
             </h1>
@@ -65,9 +65,9 @@
                 <div class="text-center pb-4">
                     <h3 class="mb-3 export--template-title">Download Spreadsheet Template</h3>
                     <div class="btn--container justify-content-center export--template-btns">
-                        <a href="{{asset('assets/categories_bulk_format.xlsx')}}" download=""
+                        <a href="{{asset('public/assets/categories_bulk_format.xlsx')}}" download=""
                             class="btn btn-dark">Template with Existing Data</a>
-                        <a href="{{asset('assets/categories_bulk_without_data_format.xlsx')}}" download=""
+                        <a href="{{asset('public/assets/categories_bulk_without_data_format.xlsx')}}" download=""
                             class="btn btn-dark">Template without Data</a>
                     </div>
                 </div>

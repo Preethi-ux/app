@@ -9,7 +9,7 @@
         <div class="page-header">
             <h1 class="page-header-title text-capitalize">
                 <div class="card-header-icon d-inline-flex mr-2 img">
-                    <img src="{{asset('/assets/admin/img/mail.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/mail.png')}}" alt="public">
                 </div>
                 <span>
                     {{ __('messages.subscribed_mail_list') }}
@@ -86,7 +86,7 @@
                 </table>
                 @if(count($subscribers) === 0)
                 <div class="empty--data">
-                    <img src="{{asset('/assets/admin/img/empty.png')}}" alt="public">
+                    <img src="{{asset('/public/assets/admin/img/empty.png')}}" alt="public">
                     <h5>
                         {{translate('no_data_found')}}
                     </h5>
