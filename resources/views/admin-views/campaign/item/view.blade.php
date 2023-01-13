@@ -169,13 +169,13 @@
                             <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                             <a id="export-excel" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('/assets/admin')}}/svg/components/excel.svg"
+                                        src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                         alt="Image Description">
                                 {{__('messages.excel')}}
                             </a>
                             <a id="export-csv" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                        src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                         alt="Image Description">
                                 .{{__('messages.csv')}}
                             </a>

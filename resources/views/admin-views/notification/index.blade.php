@@ -62,7 +62,7 @@
                                 <label class="form-label">&nbsp;</label>
                                 <center class="mb-3">
                                     <img class="initial-30" id="viewer"
-                                        src="{{asset('/assets/admin/img/900x400/img1.png')}}" alt="image"/>
+                                        src="{{asset('public/assets/admin/img/900x400/img1.png')}}" alt="image"/>
                                 </center>
                                 
                                 <label>{{__('messages.notification')}} {{__('messages.banner')}}</label><small class="text-danger">* ( {{__('messages.ratio')}} 3:1 )</small>
@@ -121,13 +121,13 @@
                         <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                         <a target="_blank" id="export-excel" class="dropdown-item" href="{{route('admin.notification.export', ['type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('/assets/admin')}}/svg/components/excel.svg"
+                                    src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
                                     alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
                         <a target="_blank" id="export-csv" class="dropdown-item" href="{{route('admin.notification.export', ['type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>

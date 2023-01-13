@@ -97,7 +97,7 @@
                                 </label>
                                 <center class="mt-auto mb-auto">
                                     <img class="initial-12" id="viewer"
-                                         src="{{asset('/assets/admin/img/900x400/img1.jpg')}}" alt="campaign image"/>
+                                         src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="campaign image"/>
                                 </center>
                                 <div class="form-group">
                                     <div class="custom-file">

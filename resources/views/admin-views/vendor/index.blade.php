@@ -90,7 +90,7 @@
                         <div class="col-md-6 col-lg-4">
                             <center>
                                 <img style="max-height: 100px;border-radius: 10px;object-fit:contain;" id="viewer"
-                                    src="{{ asset('/assets/admin/img/100x100/restaurant-default-image.png') }}"
+                                    src="{{ asset('public/assets/admin/img/100x100/restaurant-default-image.png') }}"
                                     alt="delivery-man image" />
                             </center>
 
@@ -111,7 +111,7 @@
                         <div class="col-md-6 col-lg-4">
                             <center>
                                 <img style="max-width: 100%;border-radius: 10px; max-height:100px;object-fit:contain;"
-                                    id="coverImageViewer" src="{{ asset('/assets/admin/img/300x100/restaurant-default-image.png') }}"
+                                    id="coverImageViewer" src="{{ asset('public/assets/admin/img/300x100/restaurant-default-image.png') }}"
                                     alt="Product thumbnail" />
                             </center>
                             <div class="form-group pt-3">
@@ -342,7 +342,7 @@
         });
     </script>
 
-    <script src="{{ asset('/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script type="text/javascript">
         $(function() {
             $("#coba").spartanMultiImagePicker({
@@ -547,9 +547,9 @@
             $('#address').val(null);
             $('#minimum_delivery_time').val(null);
             $('#maximum_delivery_time').val(null);
-            $('#viewer').attr('src', "{{ asset('/assets/admin/img/100x100/restaurant-default-image.png') }}");
+            $('#viewer').attr('src', "{{ asset('public/assets/admin/img/100x100/restaurant-default-image.png') }}");
             $('#customFileEg1').val(null);
-            $('#coverImageViewer').attr('src', "{{ asset('/assets/admin/img/300x100/restaurant-default-image.png') }}");
+            $('#coverImageViewer').attr('src', "{{ asset('public/assets/admin/img/300x100/restaurant-default-image.png') }}");
             $('#coverImageUpload').val(null);
             $('#choice_zones').val(null).trigger('change');
             $('#f_name').val(null);

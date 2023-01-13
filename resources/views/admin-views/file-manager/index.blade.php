@@ -35,7 +35,7 @@
                         <div class="col-auto">
                             @if($file['type']=='folder')
                             <a class="btn p-0 btn--folder"  href="{{route('admin.file-manager.index', base64_encode($file['path']))}}">
-                                <img class="img-thumbnail border-0 p-0" src="{{asset('/assets/admin/img/folder.png')}}" alt="">
+                                <img class="img-thumbnail border-0 p-0" src="{{asset('public/assets/admin/img/folder.png')}}" alt="">
                                 <p>{{Str::limit($file['name'],10)}}</p>
                             </a>
                             @elseif($file['type']=='file')

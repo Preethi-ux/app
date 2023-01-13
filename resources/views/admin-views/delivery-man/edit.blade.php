@@ -198,8 +198,8 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('/assets/admin/js/intlTelInput.js')}}"></script>
-    <script src="{{asset('/assets/admin/js/intlTelInput-jquery.min.js')}}"></script>
+    <script src="{{asset('public/assets/admin/js/intlTelInput.js')}}"></script>
+    <script src="{{asset('public/assets/admin/js/intlTelInput-jquery.min.js')}}"></script>
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -221,7 +221,7 @@
             $country=\App\Models\BusinessSetting::where('key','country')->first();
         ?>
         var phone = $("#phone").intlTelInput({
-            utilsScript: "{{asset('/assets/admin/js/intlTellInput-util.min.js')}}",
+            utilsScript: "{{asset('public/assets/admin/js/intlTellInput-util.min.js')}}",
             nationalMode: true,
             autoHideDialCode: true,
             autoPlaceholder: "ON",
@@ -234,7 +234,7 @@
         });
     </script>
 
-    <script src="{{asset('/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script type="text/javascript">
         $(function () {
             $("#coba").spartanMultiImagePicker({

@@ -71,7 +71,7 @@
                                         <div class="form-group mt-auto">
                                             <center>
                                                 <img class="initial-2" id="viewer"
-                                                    src="{{asset('/assets/admin/img/900x400/img1.jpg')}}" alt="campaign image"/>
+                                                    src="{{asset('public/assets/admin/img/900x400/img1.jpg')}}" alt="campaign image"/>
                                             </center>
                                         </div>
                                         <div class="form-group mt-auto">
@@ -290,7 +290,7 @@
                 },
                 language: {
                     zeroRecords: '<div class="text-center p-4">' +
-                    '<img class="mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">' +
+                    '<img class="mb-3" src="{{asset('public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description" style="width: 7rem;">' +
                     '<p class="mb-0">No data to show</p>' +
                     '</div>'
                 }

@@ -3,7 +3,7 @@
 @section('title',__('messages.settings'))
 
 @push('css_or_js')
-<link href="{{asset('/assets/admin/css/croppie.css')}}" rel="stylesheet">
+<link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
 <style>
     .slider {
         position: absolute;
@@ -99,7 +99,7 @@
                         <div class="form-group m-0">
                             <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border rounded px-3 form-control" for="schedule_order">
                                 <span class="pr-2">{{__('messages.scheduled')}} {{__('messages.order')}}:
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this status is turned on, the customer is able to place a scheduled order')}}" class="input-label-secondary"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="i"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this status is turned on, the customer is able to place a scheduled order')}}" class="input-label-secondary"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="i"></span>
                                 </span>
                                 <input type="checkbox" class="toggle-switch-input" onclick="location.href='{{route('vendor.business-settings.toggle-settings',[$restaurant->id,$restaurant->schedule_order?0:1, 'schedule_order'])}}'" id="schedule_order" {{$restaurant->schedule_order?'checked':''}}>
                                 <span class="toggle-switch-label">
@@ -113,7 +113,7 @@
                             <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border rounded px-3 form-control" for="delivery">
                                 <span class="pr-2">
                                     {{__('messages.delivery')}}:
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate(': If this option is active, customers can place orders for home delivery.')}}" class="input-label-secondary"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="i"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate(': If this option is active, customers can place orders for home delivery.')}}" class="input-label-secondary"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="i"></span>
                                 </span>
                                 <input type="checkbox" name="delivery" class="toggle-switch-input" onclick="location.href='{{route('vendor.business-settings.toggle-settings',[$restaurant->id,$restaurant->delivery?0:1, 'delivery'])}}'" id="delivery" {{$restaurant->delivery?'checked':''}}>
                                 <span class="toggle-switch-label">
@@ -128,7 +128,7 @@
                             <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border rounded px-3 form-control" for="free_delivery">
                                 <span class="pr-2">
                                     {{__('messages.free_delivery')}}:
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this option is on, customers will get free delivery')}}" class="input-label-secondary"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="i"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this option is on, customers will get free delivery')}}" class="input-label-secondary"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="i"></span>
                                 </span>
                                 <input type="checkbox" name="free_delivery" class="toggle-switch-input" onclick="location.href='{{route('vendor.business-settings.toggle-settings',[$restaurant->id,$restaurant->free_delivery?0:1, 'free_delivery'])}}'" id="free_delivery" {{$restaurant->free_delivery?'checked':''}}>
                                 <span class="toggle-switch-label">
@@ -143,7 +143,7 @@
                             <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border rounded px-3 form-control" for="take_away">
                                 <span class="pr-2 text-capitalize">
                                     {{__('messages.take_away')}}:
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('By disabling this option, customers cannot place self-pickup / take-away orders')}}" class="input-label-secondary"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="i"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('By disabling this option, customers cannot place self-pickup / take-away orders')}}" class="input-label-secondary"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="i"></span>
                                 </span>
                                 <input type="checkbox" class="toggle-switch-input" onclick="location.href='{{route('vendor.business-settings.toggle-settings',[$restaurant->id,$restaurant->take_away?0:1, 'take_away'])}}'" id="take_away" {{$restaurant->take_away?'checked':''}}>
                                 <span class="toggle-switch-label">
@@ -158,7 +158,7 @@
                             <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border rounded px-3 form-control" for="veg">
                                 <span class="pr-2 text-capitalize">
                                     {{__('messages.veg')}}:
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this button is on , it will be show in veg restaurant list in user app.')}}" class="input-label-secondary"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="i"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this button is on , it will be show in veg restaurant list in user app.')}}" class="input-label-secondary"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="i"></span>
                                 </span>
                                 <input type="checkbox" class="toggle-switch-input" onclick="location.href='{{route('vendor.business-settings.toggle-settings',[$restaurant->id,$restaurant->veg?0:1, 'veg'])}}'" id="veg" {{$restaurant->veg?'checked':''}}>
                                 <span class="toggle-switch-label">
@@ -173,7 +173,7 @@
                             <label class="toggle-switch toggle-switch-sm d-flex justify-content-between border rounded px-3 form-control" for="non_veg">
                                 <span class="pr-2 text-capitalize">
                                     {{__('messages.non_veg')}}:
-                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this button is on , it will be show in non-veg restaurant list in user app.')}}" class="input-label-secondary"><img src="{{asset('/assets/admin/img/info-circle.svg')}}" alt="i"></span>
+                                    <span data-toggle="tooltip" data-placement="right" data-original-title="{{translate('If this button is on , it will be show in non-veg restaurant list in user app.')}}" class="input-label-secondary"><img src="{{asset('public/assets/admin/img/info-circle.svg')}}" alt="i"></span>
                                 </span>
                                 <input type="checkbox" class="toggle-switch-input" onclick="location.href='{{route('vendor.business-settings.toggle-settings',[$restaurant->id,$restaurant->non_veg?0:1, 'non_veg'])}}'" id="non_veg" {{$restaurant->non_veg?'checked':''}}>
                                 <span class="toggle-switch-label">

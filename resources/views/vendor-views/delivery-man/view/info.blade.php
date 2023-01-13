@@ -39,7 +39,7 @@
                             <span class="subtitle">
                                 {{__('messages.total')}} {{__('messages.delivered')}} {{__('messages.orders')}}
                             </span>
-                            <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant-panel/deliveryman/delivered.png')}}" alt="dashboard">
+                            <img class="resturant-icon" src="{{asset('public/assets/admin/img/resturant-panel/deliveryman/delivered.png')}}" alt="dashboard">
                         </div>
                     </div>
 
@@ -48,7 +48,7 @@
                         <div class="resturant-card dashboard--card bg--3">
                             <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($dm->wallet?$dm->wallet->collected_cash:0.0)}}</h4>
                             <span class="subtitle">{{__('messages.cash_in_hand')}}</span>
-                            <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant-panel/deliveryman/cash.png')}}" alt="dashboard">
+                            <img class="resturant-icon" src="{{asset('public/assets/admin/img/resturant-panel/deliveryman/cash.png')}}" alt="dashboard">
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                         <div class="resturant-card dashboard--card bg--1">
                             <h4 class="title">{{\App\CentralLogics\Helpers::format_currency($dm->wallet?$dm->wallet->total_earning:0.00)}}</h4>
                             <span class="subtitle">{{__('messages.total_earning')}}</span>
-                            <img class="resturant-icon" src="{{asset('/assets/admin/img/resturant-panel/deliveryman/earning.png')}}" alt="dashboard">
+                            <img class="resturant-icon" src="{{asset('public/assets/admin/img/resturant-panel/deliveryman/earning.png')}}" alt="dashboard">
                         </div>
                     </div>
 

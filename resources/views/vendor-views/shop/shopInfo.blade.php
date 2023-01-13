@@ -35,7 +35,7 @@
             <div class="my-resturant--card">
                 @if($shop->image=='def.png')
                 <div class="my-resturant--avatar">
-                    <img src="{{asset('/assets/back-end')}}/img/shop.png"
+                    <img src="{{asset('public/assets/back-end')}}/img/shop.png"
                     class="border"
                     onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                     alt="User Pic">

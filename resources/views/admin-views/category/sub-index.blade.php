@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h1 class="page-header-title">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('/assets/admin/img/sub-category.png')}}" alt="">
+                            <img src="{{asset('public/assets/admin/img/sub-category.png')}}" alt="">
                         </div>
                         <span>{{__('messages.sub')}} {{__('messages.category')}} {{__('messages.setup')}}</span>
                     </h1>

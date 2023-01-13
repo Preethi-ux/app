@@ -1510,7 +1510,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                         {{ isset($order->restaurant) ? $order->restaurant->longitude : 0 }}),
                     map: map,
                     title: "{{ isset($order->restaurant) ? Str::limit($order->restaurant->name, 15, '...') : '' }}",
-                    icon: "{{ asset('/assets/admin/img/restaurant_map.png') }}"
+                    icon: "{{ asset('public/assets/admin/img/restaurant_map.png') }}"
                 });
 
                 google.maps.event.addListener(Restaurantmarker, 'click', (function(Restaurantmarker) {
@@ -1533,7 +1533,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                         position: point,
                         map: map,
                         title: deliveryMan[i].location,
-                        icon: "{{ asset('/assets/admin/img/delivery_boy_map.png') }}"
+                        icon: "{{ asset('public/assets/admin/img/delivery_boy_map.png') }}"
                     });
                     dmMarkers[deliveryMan[i].id] = marker;
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -1578,7 +1578,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                             {{ $address['longitude'] }}),
                         map: map,
                         title: "{{ $order->customer->f_name }} {{ $order->customer->l_name }}",
-                        icon: "{{ asset('/assets/admin/img/customer_location.png') }}"
+                        icon: "{{ asset('public/assets/admin/img/customer_location.png') }}"
                     });
 
                     google.maps.event.addListener(marker, 'click', (function(marker) {
@@ -1597,7 +1597,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                             {{ $order->dm_last_location['longitude'] }}),
                         map: map,
                         title: "{{ $order->delivery_man->f_name }}  {{ $order->delivery_man->l_name }}",
-                        icon: "{{ asset('/assets/admin/img/delivery_boy_map.png') }}"
+                        icon: "{{ asset('public/assets/admin/img/delivery_boy_map.png') }}"
                     });
 
                     google.maps.event.addListener(dmmarker, 'click', (function(dmmarker) {
@@ -1617,7 +1617,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                             {{ $order->restaurant->longitude }}),
                         map: map,
                         title: "{{ Str::limit($order->restaurant->name, 15, '...') }}",
-                        icon: "{{ asset('/assets/admin/img/restaurant_map.png') }}"
+                        icon: "{{ asset('public/assets/admin/img/restaurant_map.png') }}"
                     });
 
                     google.maps.event.addListener(Retaurantmarker, 'click', (function(Retaurantmarker) {
