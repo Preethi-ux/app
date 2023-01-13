@@ -14,7 +14,7 @@
                 <div class="col-sm mb-2 mb-sm-0">
                     <h2 class="page-header-title text-capitalize">
                         <div class="card-header-icon d-inline-flex mr-2 img">
-                            <img src="{{asset('public/assets/admin/img/category.png')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/category.png')}}" alt="">
                         </div>
                         <span>
                             {{__('Category')}}
@@ -73,7 +73,7 @@
                                         @if(isset($category))
                                         src="{{asset('storage/app/public/category')}}/{{$category['image']}}"
                                         @else
-                                        src="{{asset('public/assets/admin/img/100x100/food-default-image.png')}}"
+                                        src="{{asset('/assets/admin/img/100x100/food-default-image.png')}}"
                                         @endif
                                         alt="image"/>
                                 </center>
@@ -132,13 +132,13 @@
                             {{--<span class="dropdown-header">{{__('messages.options')}}</span>
                             <a id="export-copy" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
+                                        src="{{asset('/assets/admin')}}/svg/illustrations/copy.svg"
                                         alt="Image Description">
                                 {{__('messages.copy')}}
                             </a>
                             <a id="export-print" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
+                                        src="{{asset('/assets/admin')}}/svg/illustrations/print.svg"
                                         alt="Image Description">
                                 {{__('messages.print')}}
                             </a>
@@ -146,19 +146,19 @@
                             <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                             <a target="__blank" id="export-excel" class="dropdown-item" href="{{route('admin.category.export-categories', ['type'=>'excel'])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                        src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                         alt="Image Description">
                                 {{__('messages.excel')}}
                             </a>
                             <a target="__blank" id="export-csv" class="dropdown-item" href="{{route('admin.category.export-categories', ['type'=>'csv'])}}">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                        src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                         alt="Image Description">
                                 .{{__('messages.csv')}}
                             </a>
                             {{--<a id="export-pdf" class="dropdown-item" href="javascript:;">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                        src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
+                                        src="{{asset('/assets/admin')}}/svg/components/pdf.svg"
                                         alt="Image Description">
                                 {{__('messages.pdf')}}
                             </a>--}}
@@ -350,7 +350,7 @@
     <script>
         $('#reset_btn').click(function(){
             $('#name').val(null);
-            $('#viewer').attr('src', "{{asset('public/assets/admin/img/100x100/food-default-image.png')}}");
+            $('#viewer').attr('src', "{{asset('/assets/admin/img/100x100/food-default-image.png')}}");
             $('#customFileEg1').val(null);
 
         })

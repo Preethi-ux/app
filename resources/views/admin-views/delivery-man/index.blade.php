@@ -102,7 +102,7 @@
                                 <label class="d-block mb-lg-5 text-center">{{ translate('messages.delivery_man_image') }} <small class="text-danger">* ( {{ translate('messages.ratio') }} 100x100 )</small></label>
                                 <center>
                                     <img class="initial-24" id="viewer"
-                                        src="{{ asset('public/assets/admin/img/100x100/user.png') }}"
+                                        src="{{ asset('/assets/admin/img/100x100/user.png') }}"
                                         alt="delivery-man image" />
                                 </center>
                                 <div class="custom-file">
@@ -204,8 +204,8 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('public/assets/admin/js/intlTelInput.js')}}"></script>
-    <script src="{{asset('public/assets/admin/js/intlTelInput-jquery.min.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/intlTelInput.js')}}"></script>
+    <script src="{{asset('/assets/admin/js/intlTelInput-jquery.min.js')}}"></script>
 
     <script>
         function readURL(input) {
@@ -227,7 +227,7 @@
             $country = \App\Models\BusinessSetting::where('key', 'country')->first();
         ?>
         var phone = $("#phone").intlTelInput({
-            utilsScript: "{{asset('public/assets/admin/js/intlTellInput-util.min.js')}}",
+            utilsScript: "{{asset('/assets/admin/js/intlTellInput-util.min.js')}}",
             autoHideDialCode: true,
             autoPlaceholder: "ON",
             dropdownContainer: document.body,
@@ -242,7 +242,7 @@
         // })
     </script>
 
-    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script type="text/javascript">
         $(function() {
             $("#coba").spartanMultiImagePicker({
@@ -252,7 +252,7 @@
                 groupClassName: 'col-6',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{ asset('public/assets/admin/img/100x100/user2.png') }}',
+                    image: '{{ asset('/assets/admin/img/100x100/user2.png') }}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",
@@ -282,8 +282,8 @@
     </script>
     <script>
         $('#reset_btn').click(function(){
-            $('#viewer').attr('src','{{asset('public/assets/admin/img/900x400/img1.jpg')}}');
-            $('#coba').attr('src','{{asset('public/assets/admin/img/900x400/img1.jpg')}}');
+            $('#viewer').attr('src','{{asset('/assets/admin/img/900x400/img1.jpg')}}');
+            $('#coba').attr('src','{{asset('/assets/admin/img/900x400/img1.jpg')}}');
         })
     </script>
 @endpush

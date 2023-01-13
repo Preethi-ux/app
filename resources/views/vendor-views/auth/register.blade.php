@@ -1,7 +1,7 @@
 @extends('layouts.landing.app')
 @section('title', __('messages.restaurant_registration'))
 @push('css_or_js')
-    <link rel="stylesheet" href="{{ asset('public/assets/admin') }}/css/toastr.css">
+    <link rel="stylesheet" href="{{ asset('/assets/admin') }}/css/toastr.css">
     <style>
         #map {
             height: 350px;
@@ -137,7 +137,7 @@
                                     <center>
                                         <img style="max-width: 100%;border: 1px solid; border-radius: 10px; height:150px;"
                                             id="coverImageViewer"
-                                            src="{{ asset('public/assets/admin/img/900x400/img1.jpg') }}"
+                                            src="{{ asset('/assets/admin/img/900x400/img1.jpg') }}"
                                             alt="Product thumbnail" />
                                     </center>
                                     <label for="name" class="pt-2">{{ __('messages.upload') }} {{ __('messages.cover') }}
@@ -155,7 +155,7 @@
                                     <center>
                                         <img style="max-width: 100%;border: 1px solid; border-radius: 10px; height:150px;"
                                             id="logoImageViewer"
-                                            src="{{ asset('public/assets/admin/img/160x160/img1.jpg') }}"
+                                            src="{{ asset('/assets/admin/img/160x160/img1.jpg') }}"
                                             alt="Product thumbnail" />
                                     </center>
 
@@ -298,7 +298,7 @@
 
     @endsection
     @push('script_2')
-        <script src="{{ asset('public/assets/admin') }}/js/toastr.js"></script>
+        <script src="{{ asset('/assets/admin') }}/js/toastr.js"></script>
         {!! Toastr::message() !!}
 
         @if ($errors->any())
@@ -343,7 +343,7 @@
             });
         </script>
 
-        <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+        <script src="{{ asset('/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
         <script type="text/javascript">
             $(function() {
                 $("#coba").spartanMultiImagePicker({
@@ -353,7 +353,7 @@
                     groupClassName: 'col-lg-2 col-md-4 col-sm-4 col-6',
                     maxFileSize: '',
                     placeholderImage: {
-                        image: '{{ asset('public/assets/admin/img/400x400/img2.jpg') }}',
+                        image: '{{ asset('/assets/admin/img/400x400/img2.jpg') }}',
                         width: '100%'
                     },
                     dropFileLabel: "Drop Here",

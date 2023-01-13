@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('/assets/admin/css/croppie.css')}}" rel="stylesheet">
     <style>
         .flex-item{
             padding: 10px;
@@ -122,13 +122,13 @@
                         <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.vendor.cash-transaction-export', ['restaurant'=>$restaurant->id,'type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                     alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
                         <a id="export-csv" class="dropdown-item" href="{{route('admin.vendor.cash-transaction-export', ['restaurant'=>$restaurant->id,'type'=>'csv'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>
@@ -138,13 +138,13 @@
                         <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.vendor.digital-transaction-export', ['restaurant'=>$restaurant->vendor->id,'type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                     alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
                         <a id="export-csv" class="dropdown-item" href="{{route('admin.vendor.digital-transaction-export', ['restaurant'=>$restaurant->vendor->id,'type'=>'csv'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>
@@ -154,13 +154,13 @@
                         <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.vendor.withdraw-transaction-export', ['restaurant'=>$restaurant->vendor->id,'type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                     alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
                         <a id="export-csv" class="dropdown-item" href="{{route('admin.vendor.withdraw-transaction-export', ['restaurant'=>$restaurant->vendor->id,'type'=>'csv'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>

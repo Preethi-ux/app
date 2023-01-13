@@ -122,13 +122,13 @@
                         {{--<span class="dropdown-header">{{__('messages.options')}}</span>
                         <a id="export-copy" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
+                                    src="{{asset('/assets/admin')}}/svg/illustrations/copy.svg"
                                     alt="Image Description">
                             {{__('messages.copy')}}
                         </a>
                         <a id="export-print" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
+                                    src="{{asset('/assets/admin')}}/svg/illustrations/print.svg"
                                     alt="Image Description">
                             {{__('messages.print')}}
                         </a>
@@ -139,14 +139,14 @@
                             <input type="hidden" name="type" value="excel">
                             <button type="submit">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                 alt="Image Description">
                                 {{__('messages.excel')}}
                             </button>
                         </form> --}}
                         <a id="export-excel" class="dropdown-item" href="{{route('admin.report.food-wise-report-export', ['type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                     alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
@@ -156,20 +156,20 @@
                             <input type="hidden" name="type" value="csv">
                             <button type="submit">
                                 <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                 alt="Image Description">
                                 .{{__('messages.csv')}}
                             </button>
                         </form> --}}
                         <a id="export-csv" class="dropdown-item" href="{{route('admin.report.food-wise-report-export', ['type'=>'csv'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>
                         {{--<a id="export-pdf" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/pdf.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/pdf.svg"
                                     alt="Image Description">
                             {{__('messages.pdf')}}
                         </a>--}}
@@ -221,7 +221,7 @@
                                     <a class="table-rest-info"
                                         href="{{ route('admin.food.view', [$food['id']]) }}">
                                         <img src="{{ asset('storage/app/public/product') }}/{{ $food['image'] }}"
-                                            onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                                            onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                                             alt="{{ $food->name }} image">
                                         <div class="info">
                                             <span class="d-block text-body">
@@ -287,9 +287,9 @@
 @endpush
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin') }}/vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="{{ asset('public/assets/admin') }}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{ asset('public/assets/admin') }}/js/hs.chartjs-matrix.js"></script>
+    <script src="{{ asset('/assets/admin') }}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{ asset('/assets/admin') }}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{ asset('/assets/admin') }}/js/hs.chartjs-matrix.js"></script>
 
     <script>
         $(document).on('ready', function() {

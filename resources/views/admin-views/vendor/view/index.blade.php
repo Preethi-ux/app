@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('/assets/admin/css/croppie.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -150,7 +150,7 @@
                             <div class="col-lg-6">
                                 <div class="resturant--info-address">
                                     <div class="logo">
-                                        <img onerror="this.src='{{asset('public/assets/admin/img/100x100/restaurant-default-image.png')}}'"
+                                        <img onerror="this.src='{{asset('/assets/admin/img/100x100/restaurant-default-image.png')}}'"
                                             src="{{asset('storage/app/public/restaurant')}}/{{$restaurant->logo}}">
                                     </div>
                                     <ul class="address-info list-unstyled list-unstyled-py-3 text-dark">
@@ -201,7 +201,7 @@
                     <div class="card-body d-flex flex-column justify-content-center">
                         <div class="resturant--info-address">
                             <div class="avatar avatar-xxl avatar-circle avatar-border-lg">
-                                <img class="avatar-img" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                <img class="avatar-img" onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                             src="{{asset('storage/app/public/vendor')}}/{{$restaurant->vendor->image}}" alt="Image Description">
                             </div>
                             <ul class="address-info address-info-2 list-unstyled list-unstyled-py-3 text-dark">

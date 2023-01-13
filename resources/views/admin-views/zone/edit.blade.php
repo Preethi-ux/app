@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                                 <div class="instructions-image mt-4">
-                                    <img src={{asset('public/assets/admin/img/instructions.gif')}} alt="instructions">
+                                    <img src={{asset('/assets/admin/img/instructions.gif')}} alt="instructions">
                                 </div>
                             </div>
                         </div>

@@ -28,25 +28,25 @@
                     <div class="app-logo animate__animated animate__fadeInDown">
                         @if ($landing_page_links['app_url_android_status'])
                             <a href="{{ $landing_page_links['app_url_android'] }}">
-                                <img class="img-fluid" src="{{ asset('public/assets/landing') }}/image/playstore.png"
+                                <img class="img-fluid" src="{{ asset('/assets/landing') }}/image/playstore.png"
                                     alt="Play store" />
                             </a>
                         @endif
                         @if ($landing_page_links['app_url_ios_status'])
                             <a href="{{ $landing_page_links['app_url_ios'] }}">
                                 <img class="img-fluid"
-                                    src="{{ asset('public/assets/landing') }}/image/apple_store.png" alt="iOS App">
+                                    src="{{ asset('/assets/landing') }}/image/apple_store.png" alt="iOS App">
                             </a>
                         @endif
                         @if ($landing_page_links['web_app_url_status'])
                             <a href="{{ $landing_page_links['web_app_url'] }}">
-                                <img class="img-fluid" src="{{ asset('public/assets/landing') }}/image/browse.png">
+                                <img class="img-fluid" src="{{ asset('/assets/landing') }}/image/browse.png">
                             </a>
                         @endif
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="{{asset('public/assets/landing')}}/image/{{isset($landing_page_images['top_content_image'])?$landing_page_images['top_content_image']:'double_screen_image.png'}}" alt="Image One"
+                    <img src="{{asset('/assets/landing')}}/image/{{isset($landing_page_images['top_content_image'])?$landing_page_images['top_content_image']:'double_screen_image.png'}}" alt="Image One"
                         class="img-fluid hero-content-image animate__animated animate__bounceInRight" />
                 </div>
             </div>
@@ -58,7 +58,7 @@
             <div class="row about-section-row">
                 <div class="col-lg-6 col-md-6 col-sm-12 about-us-left justify-content-center">
                     <img class="img-fluid animate__animated animate__fadeInDown about-us-image w-100"
-                        src="{{ asset('public/assets/landing') }}/image/{{ isset($landing_page_images['about_us_image']) ? $landing_page_images['about_us_image'] : 'about_us_image.png' }}"
+                        src="{{ asset('/assets/landing') }}/image/{{ isset($landing_page_images['about_us_image']) ? $landing_page_images['about_us_image'] : 'about_us_image.png' }}"
                         alt="Image" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 about-us-right-column">
@@ -93,7 +93,7 @@
                             <div class="d-flex align-items-center feature">
                                 <div class="flex-shrink-0">
                                     <img class="img-fluid feature-image animate__animated animate__fadeInDown"
-                                        src="{{ asset('public/assets/landing/') }}/image/{{ $feature_data['img'] }}"
+                                        src="{{ asset('/assets/landing/') }}/image/{{ $feature_data['img'] }}"
                                         alt="Image" />
                                 </div>
                                 <div class="flex-grow-1 ms-3 feature-service">
@@ -107,7 +107,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 about-us-left">
                         <img class="img-fluid stuning-image w-100"
-                            src="{{ asset('public/assets/landing') }}/image/{{ isset($landing_page_images['feature_section_image']) ? $landing_page_images['feature_section_image'] : 'about_us_image.png' }}" alt="About us" />
+                            src="{{ asset('/assets/landing') }}/image/{{ isset($landing_page_images['feature_section_image']) ? $landing_page_images['feature_section_image'] : 'about_us_image.png' }}" alt="About us" />
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 about-us-left">
                         <img class="img-fluid our-app-image w-100"
-                            src="{{ asset('public/assets/landing') }}/image/{{ isset($landing_page_images['mobile_app_section_image']) ? $landing_page_images['mobile_app_section_image'] : 'our_app_image.png' }}" alt="Image" />
+                            src="{{ asset('/assets/landing') }}/image/{{ isset($landing_page_images['mobile_app_section_image']) ? $landing_page_images['mobile_app_section_image'] : 'our_app_image.png' }}" alt="Image" />
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 our-app-text-box">
                         <div class="about-us-right align-center">
@@ -134,14 +134,14 @@
                                 @if ($landing_page_links['app_url_android_status'])
                                     <a href="{{ $landing_page_links['app_url_android'] }}" target="_blank">
                                         <img class="img-fluid w-100"
-                                            src="{{ asset('public/assets/landing') }}/image/playstore.png"
+                                            src="{{ asset('/assets/landing') }}/image/playstore.png"
                                             alt="Play store" />
                                     </a>&nbsp;
                                 @endif
                                 @if ($landing_page_links['app_url_ios_status'])
                                     <a href="{{ $landing_page_links['app_url_ios'] }}" target="_blank">
                                         <img class="img-fluid apple-store w-100"
-                                            src="{{ asset('public/assets/landing') }}/image/apple_store.png"
+                                            src="{{ asset('/assets/landing') }}/image/apple_store.png"
                                             alt="iOS App" />
                                     </a>
                                 @endif
@@ -170,7 +170,7 @@
                         <div class="col-md-4 col-sm-12 custom-card ">
                             <div class="card card-square shadow">
                                 <img class="img-fluid mt-3"
-                                    src="{{ asset('public/assets/landing') }}/image/{{ $sp['img'] }}" alt="Image" />
+                                    src="{{ asset('/assets/landing') }}/image/{{ $sp['img'] }}" alt="Image" />
                                 <div class="card-body my-card-body">
                                     <h4 class="box-card-heading">{{ $sp['title'] }}</h4>
                                 </div>
@@ -227,7 +227,7 @@
                             <div class="col owl-item">
                                 <div class="testimonial">
                                     <div class="pic">
-                                        <img src="{{ asset('public/assets/landing') }}/image/{{ $data['img'] }}"
+                                        <img src="{{ asset('/assets/landing') }}/image/{{ $data['img'] }}"
                                             alt="Image">
                                     </div>
                                     <div class="testimonial-content">

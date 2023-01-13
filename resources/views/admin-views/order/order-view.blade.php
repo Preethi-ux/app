@@ -320,7 +320,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                                                 class="tio-edit"></i></span>
                                                         <img class="img-fluid rounded"
                                                             src="{{ asset('storage/app/public/product') }}/{{ $detail->food['image'] }}"
-                                                            onerror="this.src='{{ asset('public/assets/admin/img/100x100/food-default-image.png') }}'"
+                                                            onerror="this.src='{{ asset('/assets/admin/img/100x100/food-default-image.png') }}'"
                                                             alt="Image Description">
                                                     </div>
                                                 @else
@@ -328,7 +328,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                                         href="{{ route('admin.food.view', $detail->food['id']) }}">
                                                         <img class="img-fluid rounded"
                                                             src="{{ asset('storage/app/public/product') }}/{{ $detail->food['image'] }}"
-                                                            onerror="this.src='{{ asset('public/assets/admin/img/100x100/food-default-image.png') }}'"
+                                                            onerror="this.src='{{ asset('/assets/admin/img/100x100/food-default-image.png') }}'"
                                                             alt="Image Description">
                                                     </a>
                                                 @endif
@@ -404,7 +404,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                                                 class="tio-edit"></i></span>
                                                         <img class="img-fluid"
                                                             src="{{ asset('storage/app/public/campaign') }}/{{ $detail->campaign['image'] }}"
-                                                            onerror="this.src='{{ asset('public/assets/admin/img/100x100/food-default-image.png') }}'"
+                                                            onerror="this.src='{{ asset('/assets/admin/img/100x100/food-default-image.png') }}'"
                                                             alt="Image Description">
                                                     </div>
                                                 @else
@@ -412,7 +412,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                                         href="{{ route('admin.campaign.view', ['item', $detail->campaign['id']]) }}">
                                                         <img class="img-fluid"
                                                             src="{{ asset('storage/app/public/campaign') }}/{{ $detail->campaign['image'] }}"
-                                                            onerror="this.src='{{ asset('public/assets/admin/img/100x100/food-default-image.png') }}'"
+                                                            onerror="this.src='{{ asset('/assets/admin/img/100x100/food-default-image.png') }}'"
                                                             alt="Image Description">
                                                     </a>
                                                 @endif
@@ -683,7 +683,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                         <a class="media align-items-center  deco-none customer--information-single"
                                             href="{{ route('admin.delivery-man.preview', [$order->delivery_man['id']]) }}">
                                             <div class="avatar avatar-circle">
-                                                <img class="avatar-img w-75px" onerror="this.src='{{ asset('public/assets/admin/img/160x160/img3.png') }}'"
+                                                <img class="avatar-img w-75px" onerror="this.src='{{ asset('/assets/admin/img/160x160/img3.png') }}'"
                                                     src="{{ asset('storage/app/public/delivery-man/' . $order->delivery_man->image) }}"
                                                     alt="Image Description">
                                             </div>
@@ -743,7 +743,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                             href="{{ route('admin.customer.view', [$order->customer['id']]) }}">
                                             <div class="avatar avatar-circle">
                                                 <img class="avatar-img"
-                                                    onerror="this.src='{{ asset('public/assets/admin/img/160x160/img1.png') }}'"
+                                                    onerror="this.src='{{ asset('/assets/admin/img/160x160/img1.png') }}'"
                                                     src="{{ asset('storage/app/public/profile/' . $order->customer->image) }}"
                                                     alt="Image Description">
 
@@ -844,7 +844,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                         href="{{ route('admin.vendor.view', [$order->restaurant['id']]) }}">
                                         <div class="avatar avatar-circle">
                                             <img class="avatar-img w-75px"
-                                                onerror="this.src='{{ asset('public/assets/admin/img/100x100/restaurant-default-image.png') }}'"
+                                                onerror="this.src='{{ asset('/assets/admin/img/100x100/restaurant-default-image.png') }}'"
                                                 src="{{ asset('storage/app/public/restaurant/' . $order->restaurant->logo) }}"
                                                 alt="Image Description">
                                         </div>
@@ -1063,7 +1063,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                                     <li class="list-group-item">
                                         <span class="dm_list" role='button' data-id="{{ $dm['id'] }}">
                                             <img class="avatar avatar-sm avatar-circle mr-1"
-                                                onerror="this.src='{{ asset('public/assets/admin/img/160x160/img1.jpg') }}'"
+                                                onerror="this.src='{{ asset('/assets/admin/img/160x160/img1.jpg') }}'"
                                                 src="{{ asset('storage/app/public/delivery-man') }}/{{ $dm['image'] }}"
                                                 alt="{{ $dm['name'] }}">
                                             {{ $dm['name'] }}
@@ -1510,7 +1510,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                         {{ isset($order->restaurant) ? $order->restaurant->longitude : 0 }}),
                     map: map,
                     title: "{{ isset($order->restaurant) ? Str::limit($order->restaurant->name, 15, '...') : '' }}",
-                    icon: "{{ asset('public/assets/admin/img/restaurant_map.png') }}"
+                    icon: "{{ asset('/assets/admin/img/restaurant_map.png') }}"
                 });
 
                 google.maps.event.addListener(Restaurantmarker, 'click', (function(Restaurantmarker) {
@@ -1533,7 +1533,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                         position: point,
                         map: map,
                         title: deliveryMan[i].location,
-                        icon: "{{ asset('public/assets/admin/img/delivery_boy_map.png') }}"
+                        icon: "{{ asset('/assets/admin/img/delivery_boy_map.png') }}"
                     });
                     dmMarkers[deliveryMan[i].id] = marker;
                     google.maps.event.addListener(marker, 'click', (function(marker, i) {
@@ -1578,7 +1578,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                             {{ $address['longitude'] }}),
                         map: map,
                         title: "{{ $order->customer->f_name }} {{ $order->customer->l_name }}",
-                        icon: "{{ asset('public/assets/admin/img/customer_location.png') }}"
+                        icon: "{{ asset('/assets/admin/img/customer_location.png') }}"
                     });
 
                     google.maps.event.addListener(marker, 'click', (function(marker) {
@@ -1597,7 +1597,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                             {{ $order->dm_last_location['longitude'] }}),
                         map: map,
                         title: "{{ $order->delivery_man->f_name }}  {{ $order->delivery_man->l_name }}",
-                        icon: "{{ asset('public/assets/admin/img/delivery_boy_map.png') }}"
+                        icon: "{{ asset('/assets/admin/img/delivery_boy_map.png') }}"
                     });
 
                     google.maps.event.addListener(dmmarker, 'click', (function(dmmarker) {
@@ -1617,7 +1617,7 @@ $max_processing_time = $order->restaurant?explode('-', $order->restaurant['deliv
                             {{ $order->restaurant->longitude }}),
                         map: map,
                         title: "{{ Str::limit($order->restaurant->name, 15, '...') }}",
-                        icon: "{{ asset('public/assets/admin/img/restaurant_map.png') }}"
+                        icon: "{{ asset('/assets/admin/img/restaurant_map.png') }}"
                     });
 
                     google.maps.event.addListener(Retaurantmarker, 'click', (function(Retaurantmarker) {

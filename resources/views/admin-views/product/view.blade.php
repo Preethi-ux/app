@@ -228,7 +228,7 @@
                     <div class="card-body d-flex flex-column justify-content-center">
                     @if($product->restaurant)                       
                         <a class="resturant--information-single" href="{{route('admin.vendor.view', $product->restaurant_id)}}" title="{{$product->restaurant['name']}}">
-                            <img class="avatar-img" style="width: 100px;height:100px;object-fit:cover;border-radius:5px;margin:0 auto 10px;" onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                            <img class="avatar-img" style="width: 100px;height:100px;object-fit:cover;border-radius:5px;margin:0 auto 10px;" onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                             src="{{asset('storage/app/public/restaurant/'.$product->restaurant->logo)}}"
                             alt="Image Description">
                             <div class="text-center">
@@ -349,7 +349,7 @@
                                     href="{{route('admin.customer.view',[$review['user_id']])}}">
                                         <div class="avatar avatar-circle">
                                             <img class="avatar-img" width="75" height="75"
-                                                onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                onerror="this.src='{{asset('/assets/admin/img/160x160/img1.jpg')}}'"
                                                 src="{{asset('storage/app/public/profile/'.$review->customer->image)}}"
                                                 alt="Image Description">
                                         </div>

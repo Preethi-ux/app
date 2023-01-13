@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <!-- Custom styles for this page -->
-    <link href="{{asset('public/assets/admin/css/croppie.css')}}" rel="stylesheet">
+    <link href="{{asset('/assets/admin/css/croppie.css')}}" rel="stylesheet">
 
 @endpush
 
@@ -127,13 +127,13 @@
                         {{--<span class="dropdown-header">{{__('messages.options')}}</span>
                         <a id="export-copy" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/illustrations/copy.svg"
+                                    src="{{asset('/assets/admin')}}/svg/illustrations/copy.svg"
                                     alt="Image Description">
                             {{__('messages.copy')}}
                         </a>
                         <a id="export-print" class="dropdown-item" href="javascript:;">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/illustrations/print.svg"
+                                    src="{{asset('/assets/admin')}}/svg/illustrations/print.svg"
                                     alt="Image Description">
                             {{__('messages.print')}}
                         </a>
@@ -142,14 +142,14 @@
 
                         <a target="__blank" id="export-excel" class="dropdown-item" href="{{route('admin.food.restaurant-food-export', ['type'=>'excel', 'restaurant_id'=>$restaurant->id])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                            src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                            src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                             alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
 
                         <a target="__blank" id="export-csv" class="dropdown-item" href="{{route('admin.food.restaurant-food-export', ['type'=>'csv', 'restaurant_id'=>$restaurant->id])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>
@@ -190,7 +190,7 @@
                     <td class="py-2">
                         <a class="media align-items-center" href="{{route('admin.food.view',[$food['id']])}}">
                             <img class="avatar avatar-lg mr-3" src="{{asset('storage/app/public/product')}}/{{$food['image']}}"
-                                    onerror="this.src='{{asset('public/assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$food->name}} image">
+                                    onerror="this.src='{{asset('/assets/admin/img/100x100/food-default-image.png')}}'" alt="{{$food->name}} image">
                             <div class="media-body">
                                 <h5 class="text-hover-primary mb-0">{{Str::limit($food['name'],20,'...')}}</h5>
                             </div>

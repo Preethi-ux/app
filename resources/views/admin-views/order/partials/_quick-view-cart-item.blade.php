@@ -12,7 +12,7 @@
             <div class="d-flex align-items-center justify-content-center active h-9rem">
                 <img class="img-responsive intial-33"
                     src="{{asset($item_type=='food'?'storage/app/public/product':'storage/app/public/campaign')}}/{{$product['image']}}" 
-                    onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                    onerror="this.src='{{asset('/assets/admin/img/160x160/img2.jpg')}}'"
                         alt="Product image" width="">
                 <div class="cz-image-zoom-pane"></div>
             </div>

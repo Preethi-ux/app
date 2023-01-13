@@ -19,7 +19,7 @@
                         </span>
                         <img class="rounded" style="width: 100%;height: 120px;object-fit:cover"
                             src="{{asset('storage/app/public/product')}}/{{$item['image']}}"
-                            onerror="this.src='{{asset('public/assets/admin/img/100x100/food.png')}}'" alt="{{$item->name}} image">
+                            onerror="this.src='{{asset('/assets/admin/img/100x100/food.png')}}'" alt="{{$item->name}} image">
                     </div>
                     <div class="text-center mt-2">
                         <span>{{$item['name']}}</span>

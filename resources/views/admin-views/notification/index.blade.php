@@ -62,7 +62,7 @@
                                 <label class="form-label">&nbsp;</label>
                                 <center class="mb-3">
                                     <img class="initial-30" id="viewer"
-                                        src="{{asset('public/assets/admin/img/900x400/img1.png')}}" alt="image"/>
+                                        src="{{asset('/assets/admin/img/900x400/img1.png')}}" alt="image"/>
                                 </center>
                                 
                                 <label>{{__('messages.notification')}} {{__('messages.banner')}}</label><small class="text-danger">* ( {{__('messages.ratio')}} 3:1 )</small>
@@ -121,13 +121,13 @@
                         <span class="dropdown-header">{{__('messages.download')}} {{__('messages.options')}}</span>
                         <a target="_blank" id="export-excel" class="dropdown-item" href="{{route('admin.notification.export', ['type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/excel.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/excel.svg"
                                     alt="Image Description">
                             {{__('messages.excel')}}
                         </a>
                         <a target="_blank" id="export-csv" class="dropdown-item" href="{{route('admin.notification.export', ['type'=>'excel'])}}">
                             <img class="avatar avatar-xss avatar-4by3 mr-2"
-                                    src="{{asset('public/assets/admin')}}/svg/components/placeholder-csv-format.svg"
+                                    src="{{asset('/assets/admin')}}/svg/components/placeholder-csv-format.svg"
                                     alt="Image Description">
                             .{{__('messages.csv')}}
                         </a>
@@ -170,7 +170,7 @@
                                 {{substr($notification['description'],0,25)}} {{strlen($notification['description'])>25?'...':''}}
                             </td>
                             <td>
-                                <img class="initial-31" src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}" onerror="src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'">
+                                <img class="initial-31" src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}" onerror="src='{{asset('/assets/admin/img/900x400/img1.jpg')}}'">
                             </td>
                             <td>
                                 {{$notification->zone_id==null?__('messages.all'):($notification->zone?$notification->zone->name:__('messages.zone').' '.__('messages.deleted'))}}
@@ -330,7 +330,7 @@
             $('#zone').val('all').trigger('change');
             $('#tergat').val('customer').trigger('change');
             $('#description').val(null);
-            $('#viewer').attr('src','{{asset('public/assets/admin/img/900x400/img1.png')}}');
+            $('#viewer').attr('src','{{asset('/assets/admin/img/900x400/img1.png')}}');
             $('#customFileEg1').val(null);
         })
     </script>

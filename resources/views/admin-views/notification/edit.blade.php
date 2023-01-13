@@ -62,7 +62,7 @@
                                 <label class="form-label">&nbsp;</label>
                                 <center class="mb-3">
                                     <img  class="initial-30" id="viewer"
-                                        src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}"  onerror="src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" alt="image"/>
+                                        src="{{asset('storage/app/public/notification')}}/{{$notification['image']}}"  onerror="src='{{asset('/assets/admin/img/900x400/img1.jpg')}}'" alt="image"/>
                                 </center>
                                 <label>{{__('messages.notification')}} {{__('messages.banner')}}</label><small class="text-danger">* ( {{__('messages.ratio')}} 3:1 )</small>
                                 <div class="custom-file">

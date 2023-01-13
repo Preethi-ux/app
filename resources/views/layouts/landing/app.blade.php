@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
-    <link rel="stylesheet" href="{{ asset('public/assets/admin') }}/css/toastr.css">
-    <link rel="stylesheet" href="{{ asset('public/assets/landing') }}/css/style.css" />
-    <link rel="stylesheet" href="{{ asset('public/assets/landing') }}/css/responsive.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/admin') }}/css/toastr.css">
+    <link rel="stylesheet" href="{{ asset('/assets/landing') }}/css/style.css" />
+    <link rel="stylesheet" href="{{ asset('/assets/landing') }}/css/responsive.css" />
     <title>@yield('title')</title>
     <style>
         html,
@@ -63,7 +63,7 @@
             <a class="navbar-brand" href="{{url('/')}}">
                 @php($logo = \App\CentralLogics\Helpers::get_settings('logo'))
                 <img class="img-fluid w-100 logo"
-                    onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                    onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                     src="{{ asset('storage/app/public/business/' . $logo) }}" alt="StackFood">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -142,7 +142,7 @@
                     <a class="navbar-brand" href="#">
                         @php($logo = \App\CentralLogics\Helpers::get_settings('logo'))
                         <img style="max-width: 200px; max-height: 60px;" class="img-fluid"
-                            onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                            onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                             src="{{ asset('storage/app/public/business/' . $logo) }}" alt="Image">
                     </a>
                     <p class="paragraph">
@@ -180,14 +180,14 @@
                             @if ($landing_page_links['app_url_android_status'])
                                 <a href="{{ $landing_page_links['app_url_android'] }}">
                                     <img class="img-fluid mr w-100"
-                                        src="{{ asset('public/assets/landing') }}/image/playstore.png"
+                                        src="{{ asset('/assets/landing') }}/image/playstore.png"
                                         alt="Play store" />
                                 </a>
                             @endif
                             @if ($landing_page_links['app_url_ios_status'])
                                 <a href="{{ $landing_page_links['app_url_ios'] }}">
                                     <img class="img-fluid mr w-100"
-                                        src="{{ asset('public/assets/landing') }}/image/apple_store.png"
+                                        src="{{ asset('/assets/landing') }}/image/apple_store.png"
                                         alt="iOS App">
                                 </a>
                             @endif
@@ -244,7 +244,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
     </script>
-    <script src="{{ asset('public/assets/admin') }}/js/toastr.js"></script>
+    <script src="{{ asset('/assets/admin') }}/js/toastr.js"></script>
     {!! Toastr::message() !!}
     <script>
         $(".owl-carousel").owlCarousel({

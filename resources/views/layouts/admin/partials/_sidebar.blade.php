@@ -14,11 +14,11 @@
                 <a class="navbar-brand d-block p-0" href="{{ route('admin.dashboard') }}" aria-label="Front">
                     <img class="navbar-brand-logo"
                         style="max-height: 50px; max-width: 100%!important; object-fit:contain; object-position:left center;"
-                        onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                        onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                         src="{{ asset('storage/app/public/business/' . $restaurant_logo) }}" alt="Logo">
                     <img class="navbar-brand-logo-mini"
                         style="max-height: 50px; border-radius: 8px;max-width: 100%!important;  object-fit:contain; object-position:left center;"
-                        onerror="this.src='{{ asset('public/assets/admin/img/160x160/img2.jpg') }}'"
+                        onerror="this.src='{{ asset('/assets/admin/img/160x160/img2.jpg') }}'"
                         src="{{ asset('storage/app/public/business/' . $restaurant_logo) }}" alt="Logo">
                 </a>
                 <!-- End Logo -->

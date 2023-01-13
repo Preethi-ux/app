@@ -3,7 +3,7 @@
 @section('title','Update campaign')
 
 @push('css_or_js')
-    <link href="{{asset('public/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/assets/admin/css/tags-input.min.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -107,7 +107,7 @@
                                         <center id="image-viewer-section" class="my-auto">
                                             <img class="initial-14" id="viewer"
                                             src="{{asset('storage/app/public/campaign')}}/{{$campaign->image}}"
-                                            onerror="this.src='{{asset('public/assets/admin/img/100x100/2.png')}}'" alt="campaign image"/>
+                                            onerror="this.src='{{asset('/assets/admin/img/100x100/2.png')}}'" alt="campaign image"/>
                                         </center>
 
                                         <div class="form-group mt-3 mb-0">
@@ -411,7 +411,7 @@
             @endif
         });
     </script>
-    <script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
+    <script src="{{asset('/assets/admin')}}/js/tags-input.min.js"></script>
 
     <script>
         $('#choice_attributes').on('change', function () {
